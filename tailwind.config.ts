@@ -14,8 +14,10 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'navigationSelectedPageColour': '#1e6ae6',
-        'navigationUnselectedPageColour': '#000000',
+        'lightModeNavigationSelectedPageColour': '#1e6ae6',
+        'lightModenavigationUnselectedPageColour': '#000000',
+        'darkModeNavigationSelectedPageColour': '#1e6ae6',
+        'darkModenavigationUnselectedPageColour': '#ffffff',
       },
     },
   },
