@@ -1,7 +1,6 @@
-import Image from 'next/image'
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center mt-36">
       <div className="w-4/5 flex flex-col items-center justify-center md:flex-row mx-auto">
         <div className="w-full md:w-1/2 px-20 text-center flex flex-col justify-center items-center">
           <h1 className="text-5xl font-bold py-5">About Me</h1>
