@@ -33,6 +33,9 @@ const Navbar = () => {
                         <a href="/portfolio" className={"/portfolio" == usePathname() ? selectedStyle : unselectedStyle}>Portfolio</a>
                     </li>
                     <li>
+                        <a href="/resume" className={"/resume" == usePathname() ? selectedStyle : unselectedStyle}>Resume</a>
+                    </li>
+                    <li>
                         <a href="/contact" className={"/contact" == usePathname() ? selectedStyle : unselectedStyle}>Contact</a>
                     </li>
                     </ul>
