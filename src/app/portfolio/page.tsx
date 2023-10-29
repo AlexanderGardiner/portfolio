@@ -19,7 +19,7 @@ export default function Portfolio() {
               <h3 className="text-3xl font-bold">Video Production</h3>
               <a className="group flex flex-col items-center" href="portfolio/videoProduction">
                 <img
-                  className="rounded-[150px] w-8/12 my-20 group-hover:scale-105 hover:scale-105"
+                  className="rounded-[150px] w-8/12 my-20 hover:scale-105 hover:scale-105"
                   src="https://images.pexels.com/photos/3418613/pexels-photo-3418613.jpeg?cs=srgb&dl=pexels-bruno-massao-3418613.jpg&fm=jpg"
                   alt="Photo of Video Camera"
                 />
