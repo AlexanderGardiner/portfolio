@@ -6,7 +6,7 @@ export default function Portfolio() {
           <h1 className="text-5xl font-bold">My Portfolio</h1>
           <div className="grid grid-cols-2 gap-4 justify-center items-center p-16 w-screen">
           <div className="flex flex-col items-center">
-              <h3 className="text-3xl font-bold">Programming</h3>
+              <h3 className="text-4xl font-bold">Programming</h3>
               <a className="group flex flex-col items-center" href="portfolio/programming">
                 <img
                   className="rounded-[150px] w-8/12 my-20 hover:scale-105"
@@ -16,7 +16,7 @@ export default function Portfolio() {
               </a>
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="text-3xl font-bold">Video Production</h3>
+              <h3 className="text-4xl font-bold">Video Production</h3>
               <a className="group flex flex-col items-center" href="portfolio/videoProduction">
                 <img
                   className="rounded-[150px] w-8/12 my-20 hover:scale-105 hover:scale-105"
