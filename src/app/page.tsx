@@ -5,19 +5,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 px-20 text-center flex flex-col justify-center items-center">
           <h1 className="text-5xl font-bold py-5">About Me</h1>
           <p className="text-xl font-medium py-5">  
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-            et quas molestias excepturi sint occaecati cupiditate non provident,
-            similique sunt in culpa qui officia deserunt mollitia animi, id est
-            laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-            distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-            cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-            omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
-            quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-            ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
-            earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-            voluptatibus maiores alias consequatur aut perferendis doloribus
-            asperiores repellat.
+            Hi, I'm Alex Gardiner. I'm currently attending Dos Pueblos High School in Goleta. This website showcases my portfolio, as well as my resume. It focuses on the two primary skills I have been building, programming and video production. I have been programming for over 7 years in various different programming languages (see my Resume). I have been shooting and editing videos for around 3 years, and during this time I have attended various video production conferences, and contests, and have recieved awards for my work.
           </p>
         </div>
         
