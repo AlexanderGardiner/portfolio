@@ -1,0 +1,3 @@
+[submodule "programmingProjects/IssueTracker"]
+	path = programmingProjects/IssueTracker
+	url = https://github.com/AlexanderGardiner/IssueTracker

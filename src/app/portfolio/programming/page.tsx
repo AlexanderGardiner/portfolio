@@ -1,3 +1,4 @@
+
 export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center">
@@ -52,13 +53,14 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Issue Tracker</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and Passport for user authentication.</p>
-                <a className="group flex flex-col items-center" href="https://github.com/AlexanderGardiner/IssueTracker">
+                <a className="group flex flex-col items-center" href={`http://localhost:${8001}/`}>
                     <img
                         className="w-full md:w-5/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
                         src="/portfolio/programmingProjects/IssueTracker.png"
                         alt="Photo of Issue Tracker"
                     />
-                </a>           
+                </a>  
+                <iframe src={`http://localhost:${8001}/`} className="w-screen top-0 right-0 aspect-video fixed invisible z-40"></iframe>
              </li>
 
             <li className="mb-10 ml-6">            
