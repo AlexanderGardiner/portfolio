@@ -42,13 +42,7 @@ export default function Page() {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A custom library for the First Robotics Competition, made for team 9084. Includes custom swerve code with odometry and pose estimation. Also includes utility classes for motors.</p>
                 <a href="https://github.com/Octobots9084/Octo-Lib-Dev" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
-                <a className="group flex flex-col items-center" href="https://github.com/Octobots9084/Octo-Lib-Dev">
-                    <img
-                        className="w-full md:w-4/5 p-5 max-w-3xl rounded-full dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/OctoLib.png"
-                        alt="Photo of FRC Team 9084"
-                    />
-                </a>
+
                 <YoutubePlayer src={"https://www.youtube.com/embed/2QfuSLlCeY8?si=dsth_N_hNHbxokwp"}/>    
 
                 
