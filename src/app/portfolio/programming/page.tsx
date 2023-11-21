@@ -1,9 +1,13 @@
-
+"use client"
+import ProgrammingProject from "@/app/components/programmingProject"
+import { useState } from 'react';
 export default function Page() {
+    const [isProgrammingProjectVisible, setProgrammingProjectVisible] = useState(false);
+
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-bold pt-10 pb-5">My Programming Projects</h1>
-      <hr className="w-96 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
+    <div className={`${isProgrammingProjectVisible ? 'overflow-hidden fixed':'overflow-show'} flex flex-col items-center z-40`}>
+      <h1 className="mt-20 text-5xl font-bold pb-5 pt-0">My Programming Projects</h1>
+      <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
       <div className="flex items-center justify-center py-5 max-w-2xl">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
             <li className="h-60 mb-60 ml-6">            
@@ -15,7 +19,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Slime Mould Simulation</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simple slime mould simulation written from scratch using HTML Canvas, JS, and CSS.</p>
-                <a href="https://github.com/AlexanderGardiner/Slime-Mould" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
+                <a href="https://github.com/AlexanderGardiner/Slime-Mould" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <a className="group flex flex-col items-center" href="https://alexandergardiner.github.io/Slime-Mould/">
                     <img
                         className="w-full md:w-3/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
@@ -34,7 +38,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Octo Lib</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A custom library for the First Robotics Competition, made for team 9084. Includes custom swerve code with odometry and pose estimation. Also includes utility classes for motors.</p>
-                <a href="https://github.com/Octobots9084/Octo-Lib-Dev" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
+                <a href="https://github.com/Octobots9084/Octo-Lib-Dev" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <a className="group flex flex-col items-center" href="https://github.com/Octobots9084/Octo-Lib-Dev">
                     <img
                         className="w-full md:w-4/5 p-5 max-w-3xl rounded-full dark:shadow-white-800 shadow-xl hover:scale-105"
@@ -53,14 +57,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Issue Tracker</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and Passport for user authentication.</p>
-                <a className="group flex flex-col items-center" href={`http://localhost:${8001}/`}>
-                    <img
-                        className="w-full md:w-5/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/IssueTracker.png"
-                        alt="Photo of Issue Tracker"
-                    />
-                </a>  
-                <iframe src={`http://localhost:${8001}/`} className="w-screen top-0 right-0 aspect-video fixed invisible z-40"></iframe>
+                <ProgrammingProject onVisibilityChange={setProgrammingProjectVisible} iframePort={"8001"} imageURL={"/portfolio/programmingProjects/IssueTracker.png"} imageAltText={"Photo of Issue Tracker"} />
              </li>
 
             <li className="mb-10 ml-6">            
@@ -107,7 +104,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Platformer V3</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 3 of a platformer written from scratch using HTML Canvas, JS, and CSS.</p>
-                <a href="https://github.com/AlexanderGardiner/Platformerv3" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
+                <a href="https://github.com/AlexanderGardiner/Platformerv3" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                          
             </li>
 
