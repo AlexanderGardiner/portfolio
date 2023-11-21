@@ -1,5 +1,6 @@
 "use client"
 import ProgrammingProject from "@/app/components/programmingProject"
+import YoutubePlayer from "@/app/components/youtubePlayer";
 import { useState } from 'react';
 export default function Page() {
     const [isProgrammingProjectVisible, setProgrammingProjectVisible] = useState(false);
@@ -48,6 +49,8 @@ export default function Page() {
                         alt="Photo of FRC Team 9084"
                     />
                 </a>
+                <YoutubePlayer src={"https://www.youtube.com/embed/2QfuSLlCeY8?si=dsth_N_hNHbxokwp"}/>    
+
                 
             </li>
 
@@ -60,6 +63,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Issue Tracker</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and Passport for user authentication.</p>
+                <a href="https://github.com/AlexanderGardiner/IssueTracker" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8001"} 
@@ -78,6 +82,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Octo Scout</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based scouting system for the First Robotics Competition. Made for team 9084.</p>
+                <a href="https://github.com/AlexanderGardiner/octo-scout" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8003"} 
@@ -96,13 +101,9 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">FRC Robot Code</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">First Robotics Competition robot code for team 9084&apos;s bot. Includes closed loop PID based motor control and computer vision code for April Tags, as well as autonomous pathing. (This code was put together by the team during the &quot;Charged Up&quot; game). The code was rewritten during the offseason to implement my Swerve Library</p>
-                <a className="group flex flex-col items-center" href="https://github.com/Octobots9084/Aluminati-2023">
-                    <img
-                        className="w-full md:w-4/5 p-5 max-w-3xl rounded-full dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/AluminatiCode.png"
-                        alt="Photo of FRC Team 9084"
-                    />
-                </a>            </li>
+                <a href="https://github.com/Octobots9084/Aluminati-2023" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
+                <YoutubePlayer src={"https://www.youtube.com/embed/OwLbJpfCA3s?si=yBU1Pc3UzVIzWgdu"}/>    
+                </li>
 
             <li className="mb-10 ml-6">            
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -126,6 +127,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Electromagnetic Particle Simulation</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simulation of particles with programmable charges written from scratch using HTML Canvas, JS, and CSS. Includes electric and magnetic field simulations.</p>
+                <a href="https://github.com/AlexanderGardiner/ElectromagneticParticleSimulator" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8002"} 
@@ -144,7 +146,7 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Platformer V2</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 2 of a platformer written from scratch using HTML Canvas, JS, and CSS.</p>
- 
+                <a href="https://github.com/AlexanderGardiner/Platformerv2" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8002"} 
