@@ -7,3 +7,9 @@
 [submodule "programmingProjects/static/Platformerv2"]
 	path = programmingProjects/static/Platformerv2
 	url = https://github.com/AlexanderGardiner/Platformerv2
+[submodule "programmingProjects/octo-scout"]
+	path = programmingProjects/octo-scout
+	url = https://github.com/AlexanderGardiner/octo-scout
+[submodule "programmingProjects/static/ElectromagneticParticleSimulator"]
+	path = programmingProjects/static/ElectromagneticParticleSimulator
+	url = https://github.com/AlexanderGardiner/ElectromagneticParticleSimulator

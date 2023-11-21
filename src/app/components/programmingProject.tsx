@@ -1,15 +1,15 @@
 "use client"
 import { useState, useEffect, FC} from 'react';
-
+import Image from 'next/image'
 interface programmingProjectProps {
     iframePort: string,
     iframePath: string,
     imageURL: string,
     imageAltText: string,
-    iframeWidth: string,
+    imageWidth: number,
     onVisibilityChange: (isVisible: boolean) => void;
 }
-const ProgrammingProject: FC<programmingProjectProps> = ({iframePort, iframePath, iframeWidth, imageURL, imageAltText, onVisibilityChange}) => {
+const ProgrammingProject: FC<programmingProjectProps> = ({iframePort, iframePath, imageWidth, imageURL, imageAltText, onVisibilityChange}) => {
     const [isVisible, setIsVisible] = useState(false);
     const toggleVisibility = () => {
         onVisibilityChange(!isVisible);
@@ -52,11 +52,14 @@ const ProgrammingProject: FC<programmingProjectProps> = ({iframePort, iframePath
                     toggleVisibility();
                   }}
             >
-                <img
-                        className={`w-full md:w-${iframeWidth} p-5 max-w-2xl dark:shadow-white-800 shadow-xl hover:scale-105 z-5 relative`}
-                        src={imageURL}
-                        alt={imageAltText}
+                <Image
+                    src={imageURL}
+                    alt={imageAltText}
+                    width={imageWidth}
+                    height={1000}
+                    className={`p-5 max-w-2xl dark:shadow-white-800 shadow-xl hover:scale-105 z-5`}
                     />
+
             </a>
         </div>
     )

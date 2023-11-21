@@ -25,7 +25,7 @@ export default function Page() {
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8002"} 
                     iframePath="Slime-Mould"
-                    iframeWidth="3/5"
+                    imageWidth={400}
                     imageURL={"/portfolio/programmingProjects/SlimeMould.png"} 
                     imageAltText={"Photo of Slime Mould Simulation"} />
                 
@@ -64,7 +64,7 @@ export default function Page() {
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8001"} 
                     iframePath=""
-                    iframeWidth="5/5"
+                    imageWidth={1000}
                     imageURL={"/portfolio/programmingProjects/IssueTracker.png"} 
                     imageAltText={"Photo of Issue Tracker"} />
              </li>
@@ -78,13 +78,13 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Octo Scout</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based scouting system for the First Robotics Competition. Made for team 9084.</p>
-                <a className="group flex flex-col items-center" href="https://github.com/AlexanderGardiner/octo-scout">
-                    <img
-                        className="w-full md:w-3/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/OctoScout.png"
-                        alt="Photo of Octo Scout"
-                    />
-                </a>                
+                <ProgrammingProject 
+                    onVisibilityChange={setProgrammingProjectVisible} 
+                    iframePort={"8003"} 
+                    iframePath=""
+                    imageWidth={400}
+                    imageURL={"/portfolio/programmingProjects/OctoScout.png"} 
+                    imageAltText={"Photo of Octo Scout"} />              
             </li>
 
             <li className="mb-10 ml-6">            
@@ -126,13 +126,13 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Electromagnetic Particle Simulation</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simulation of particles with programmable charges written from scratch using HTML Canvas, JS, and CSS. Includes electric and magnetic field simulations.</p>
-                <a className="group flex flex-col items-center" href="https://github.com/AlexanderGardiner/ElectromagneticFieldAndParticleSim">
-                    <img
-                        className="w-full md:w-5/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/ElectromagneticParticles.png"
-                        alt="Photo of Electromagnetic Particle Simulator"
-                    />
-                </a>  
+                <ProgrammingProject 
+                    onVisibilityChange={setProgrammingProjectVisible} 
+                    iframePort={"8002"} 
+                    iframePath="ElectromagneticParticleSimulator"
+                    imageWidth={1000}
+                    imageURL={"/portfolio/programmingProjects/ElectromagneticParticles.png"} 
+                    imageAltText={"Photo of Electromagnetic Particle Simulator"} /> 
             </li>
 
             <li className="mb-10 ml-6">            
@@ -149,7 +149,7 @@ export default function Page() {
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8002"} 
                     iframePath="Platformerv2"
-                    iframeWidth="5/5"
+                    imageWidth={1000}
                     imageURL={"/portfolio/programmingProjects/Platformerv2.png"} 
                     imageAltText={"Photo of Platformerv2"} /> 
             </li>
