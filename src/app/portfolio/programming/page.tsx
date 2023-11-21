@@ -95,7 +95,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">FRC Robot Code</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">First Robotics Competition robot code for team 9084's bot. Includes closed loop PID based motor control and computer vision code for April Tags, as well as autonomous pathing. (This code was put together by the team during the "Charged Up" game). The code was rewritten during the offseason to implement my Swerve Library</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">First Robotics Competition robot code for team 9084&apos;s bot. Includes closed loop PID based motor control and computer vision code for April Tags, as well as autonomous pathing. (This code was put together by the team during the &quot;Charged Up&quot; game). The code was rewritten during the offseason to implement my Swerve Library</p>
                 <a className="group flex flex-col items-center" href="https://github.com/Octobots9084/Aluminati-2023">
                     <img
                         className="w-full md:w-4/5 p-5 max-w-3xl rounded-full dark:shadow-white-800 shadow-xl hover:scale-105"

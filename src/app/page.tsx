@@ -5,7 +5,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 px-20 text-center flex flex-col justify-center items-center">
           <h1 className="text-5xl font-bold py-5">About Me</h1>
           <p className="text-xl font-medium py-5">  
-            Hi, I'm Alex Gardiner. I'm currently attending Dos Pueblos High School in Goleta. This website showcases my portfolio, as well as my resume. It focuses on the two primary skills I have been building, programming and video production. I have been programming for over 7 years in various different programming languages (see my Resume). I have been shooting and editing videos for around 3 years, and during this time I have attended various video production conferences, and contests, and have recieved awards for my work.
+            Hi, I&apos;m Alex Gardiner. I&apos;m currently attending Dos Pueblos High School in Goleta. This website showcases my portfolio, as well as my resume. It focuses on the two primary skills I have been building, programming and video production. I have been programming for over 7 years in various different programming languages (see my Resume). I have been shooting and editing videos for around 3 years, and during this time I have attended various video production conferences, and contests, and have recieved awards for my work.
           </p>
         </div>
         
