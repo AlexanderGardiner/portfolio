@@ -5,7 +5,7 @@ export default function Page() {
     const [isProgrammingProjectVisible, setProgrammingProjectVisible] = useState(false);
 
   return (
-    <div className={`${isProgrammingProjectVisible ? 'overflow-hidden fixed':'overflow-show'} flex flex-col items-center z-40`}>
+    <div className={`${isProgrammingProjectVisible ? 'overflow-hidden fixed':'overflow-show'} flex flex-col items-center z-10`}>
       <h1 className="mt-20 text-5xl font-bold pb-5 pt-0">My Programming Projects</h1>
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
       <div className="flex items-center justify-center py-5 max-w-2xl">
@@ -20,13 +20,15 @@ export default function Page() {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simple slime mould simulation written from scratch using HTML Canvas, JS, and CSS.</p>
                 <a href="https://github.com/AlexanderGardiner/Slime-Mould" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
-                <a className="group flex flex-col items-center" href="https://alexandergardiner.github.io/Slime-Mould/">
-                    <img
-                        className="w-full md:w-3/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/SlimeMould.png"
-                        alt="Photo of Slime Mould Simulation"
-                    />
-                </a>
+
+                <ProgrammingProject 
+                    onVisibilityChange={setProgrammingProjectVisible} 
+                    iframePort={"8002"} 
+                    iframePath="Slime-Mould"
+                    iframeWidth="3/5"
+                    imageURL={"/portfolio/programmingProjects/SlimeMould.png"} 
+                    imageAltText={"Photo of Slime Mould Simulation"} />
+                
             </li>
 
             <li className="mb-10 ml-6">            
@@ -46,6 +48,7 @@ export default function Page() {
                         alt="Photo of FRC Team 9084"
                     />
                 </a>
+                
             </li>
 
             <li className="mb-10 ml-6">            
@@ -57,7 +60,13 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Issue Tracker</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and Passport for user authentication.</p>
-                <ProgrammingProject onVisibilityChange={setProgrammingProjectVisible} iframePort={"8001"} imageURL={"/portfolio/programmingProjects/IssueTracker.png"} imageAltText={"Photo of Issue Tracker"} />
+                <ProgrammingProject 
+                    onVisibilityChange={setProgrammingProjectVisible} 
+                    iframePort={"8001"} 
+                    iframePath=""
+                    iframeWidth="5/5"
+                    imageURL={"/portfolio/programmingProjects/IssueTracker.png"} 
+                    imageAltText={"Photo of Issue Tracker"} />
              </li>
 
             <li className="mb-10 ml-6">            
@@ -135,13 +144,14 @@ export default function Page() {
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Platformer V2</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 2 of a platformer written from scratch using HTML Canvas, JS, and CSS.</p>
-                <a className="group flex flex-col items-center" href="https://github.com/AlexanderGardiner/Platformerv2">
-                    <img
-                        className="w-full md:w-5/5 p-5 max-w-3xl dark:shadow-white-800 shadow-xl hover:scale-105"
-                        src="/portfolio/programmingProjects/Platformerv2.png"
-                        alt="Photo of Platformerv2"
-                    />
-                </a>   
+ 
+                <ProgrammingProject 
+                    onVisibilityChange={setProgrammingProjectVisible} 
+                    iframePort={"8002"} 
+                    iframePath="Platformerv2"
+                    iframeWidth="5/5"
+                    imageURL={"/portfolio/programmingProjects/Platformerv2.png"} 
+                    imageAltText={"Photo of Platformerv2"} /> 
             </li>
 
         </ol>
