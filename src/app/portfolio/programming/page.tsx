@@ -19,14 +19,14 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Slime Mould Simulation</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simple slime mould simulation written from scratch using HTML Canvas, JS, and CSS.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simple slime mould simulation written from scratch using HTML Canvas, JS, and CSS. Inspired by this blog post: <a className="text-white hover:text-highlight" href="https://cargocollective.com/sagejenson/physarum">Blog post by Sage Jenson</a>. Optimized to have around a million mould particles running in the browser.</p>
                 <a href="https://github.com/AlexanderGardiner/Slime-Mould" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
 
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8002"} 
                     iframePath="Slime-Mould"
-                    imageWidth={400}
+                    imageWidth={350}
                     imageURL={"/portfolio/programmingProjects/SlimeMould.png"} 
                     imageAltText={"Photo of Slime Mould Simulation"} />
                 
@@ -40,7 +40,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Octo Lib</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A custom library for the First Robotics Competition, made for team 9084. Includes custom swerve code with odometry and pose estimation. Also includes utility classes for motors.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A custom library for the First Robotics Competition, made for team 9084. Includes custom swerve code with odometry and pose estimation. Also includes utility classes for motor initialization as well as math and gyro utility classes.</p>
                 <a href="https://github.com/Octobots9084/Octo-Lib-Dev" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
 
                 <YoutubePlayer src={"https://www.youtube.com/embed/2QfuSLlCeY8?si=dsth_N_hNHbxokwp"}/>    
@@ -56,7 +56,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Issue Tracker</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and Passport for user authentication.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and uses Passport for user authentication. Supports custom projects, file uploads, as well as user managment.</p>
                 <a href="https://github.com/AlexanderGardiner/IssueTracker" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
@@ -75,7 +75,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Octo Scout</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based scouting system for the First Robotics Competition. Made for team 9084.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based scouting system for the First Robotics Competition. Made for team 9084. Made for the 2023 competition Charged Up. Data is inputted on a web user interface and uploaded to a server for collection, stored as csv files for easy data analysis.</p>
                 <a href="https://github.com/AlexanderGardiner/octo-scout" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
@@ -94,7 +94,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">FRC Robot Code</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">First Robotics Competition robot code for team 9084&apos;s bot. Includes closed loop PID based motor control and computer vision code for April Tags, as well as autonomous pathing. (This code was put together by the team during the &quot;Charged Up&quot; game). The code was rewritten during the offseason to implement my Swerve Library</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">First Robotics Competition robot code for team 9084&apos;s bot. Includes closed loop PID based motor control and computer vision code for April Tags, as well as autonomous pathing. (This code was put together by the team during the &quot;Charged Up&quot; game). The code was rewritten during the offseason to implement my Swerve Library.</p>
                 <a href="https://github.com/Octobots9084/Aluminati-2023" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <YoutubePlayer src={"https://www.youtube.com/embed/OwLbJpfCA3s?si=yBU1Pc3UzVIzWgdu"}/>    
                 </li>
@@ -107,7 +107,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Platformer V3</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 3 of a platformer written from scratch using HTML Canvas, JS, and CSS.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 3 of a simple platformer written from scratch using HTML Canvas, JS, and CSS. Includes a built in level editor as well as level storage on a server. Custom levels can also be uploaded to the server.</p>
                 <a href="https://github.com/AlexanderGardiner/Platformerv3" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                          
             </li>
@@ -120,7 +120,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Electromagnetic Particle Simulation</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simulation of particles with programmable charges written from scratch using HTML Canvas, JS, and CSS. Includes electric and magnetic field simulations.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A simulation of particles with programmable charges and sizes, written from scratch using HTML Canvas, JS, and CSS. Includes electric and magnetic field simulation.</p>
                 <a href="https://github.com/AlexanderGardiner/ElectromagneticParticleSimulator" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
@@ -139,7 +139,7 @@ export default function Page() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Platformer V2</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 2 of a platformer written from scratch using HTML Canvas, JS, and CSS.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 2 of a platformer written from scratch using HTML Canvas, JS, and CSS. Includes level loading and previously uploaded user times (for a leaderboard) to another server hosted by a friend.</p>
                 <a href="https://github.com/AlexanderGardiner/Platformerv2" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
