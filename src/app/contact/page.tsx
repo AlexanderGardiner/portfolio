@@ -13,7 +13,7 @@ export default function Portfolio() {
             <div className="flex items-center px-20 justify-center">
               <section className="">
                 <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 className="mb-4 text-4xl font-bold text-center text-gray-900 dark:text-white w-96">Get In Touch</h2>
+                    <h2 className="mb-4 text-4xl font-bold text-center text-gray-900 dark:text-white w-96 pb-5">Get In Touch</h2>
                     <form action="#" className="space-y-8">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">Your email</label>
@@ -27,7 +27,7 @@ export default function Portfolio() {
                             <label htmlFor="message" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400">Your message</label>
                             <textarea id="message" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Put your message here"></textarea>
                         </div>
-                        <button type="submit" className="py-3 px-5 text-sm font-bold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                        <button type="submit" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Send message</button>
                     </form>
                 </div>
               </section>
@@ -35,12 +35,12 @@ export default function Portfolio() {
           
             <div className="flex flex-col items-center text-center justify-center">
               <div className="py-5">
-                <h1 className="text-5xl font-bold">Email</h1>
+                <h1 className="text-5xl font-bold pb-5">Email</h1>
                 <a href="mailto:example@example.com" className="text-3xl font-bold text-highlight">example@example.com</a>
               </div>
 
               <div className="py-5">
-                <h1 className="text-5xl font-bold">Phone</h1>
+                <h1 className="text-5xl font-bold pb-5">Phone</h1>
                 <a href="tel:+1000000000" className="text-3xl font-bold text-highlight">(000)-000-000</a>
               </div>
             </div>
