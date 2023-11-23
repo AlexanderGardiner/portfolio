@@ -1,12 +1,11 @@
-const nodemailer = require("nodemailer");
+const nodemailer = require("nodemailer").mail;
 const transporter = nodemailer.createTransport({
-  host: "smtp.forwardemail.net",
+  host: "mail.alexandergardiner.com",
   port: 465,
   secure: true,
-  auth: {
-    // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-    user: "REPLACE-WITH-YOUR-ALIAS@YOURDOMAIN.COM",
-    pass: "REPLACE-WITH-YOUR-GENERATED-PASSWORD",
+  tls: {
+    // do not fail on invalid certs
+    rejectUnauthorized: false,
   },
   
 });
@@ -14,9 +13,10 @@ export async function POST(
   req: { formData: () => any; }
 ) {
   const data = await req.formData();
-  const info = await transporter.sendMail({
-    from: '"Form Submission" <form@alexandergardiner.com>', // sender address
-    to: data.get("email"), // list of receivers
+  console.log(data.get("email"))
+  const info = await nodemailer({
+    from: data.get("email"), // sender address
+    to: "contact@alexandergardiner.com", // list of receivers
     subject: data.get("subject"), // Subject line
     text: data.get("body"), // plain text body
   });

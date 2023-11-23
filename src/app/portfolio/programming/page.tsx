@@ -7,11 +7,11 @@ export default function Page() {
 
   return (
     <div className={`${isProgrammingProjectVisible ? 'overflow-hidden fixed':'overflow-show'} flex flex-col items-center z-10`}>
-      <h1 className="mt-20 text-5xl font-bold pb-5 pt-0">My Programming Projects</h1>
+      <h1 className="mt-20 text-5xl md:text-5xl font-bold pb-5 pt-0 text-center">My Programming Projects</h1>
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
       <div className="flex items-center justify-center py-5 max-w-2xl">
-        <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
-            <li className="h-60 mb-60 ml-6">            
+        <ol className="w-72 md:w-screen relative border-l border-gray-200 dark:border-gray-700">                  
+            <li className="h-60 mb-60 ml-6 md:mb-96">            
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                     <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
@@ -97,20 +97,8 @@ export default function Page() {
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">First Robotics Competition robot code for team 9084&apos;s bot. Includes closed loop PID based motor control and computer vision code for April Tags, as well as autonomous pathing. (This code was put together by the team during the &quot;Charged Up&quot; game). The code was rewritten during the offseason to implement my Swerve Library.</p>
                 <a href="https://github.com/Octobots9084/Aluminati-2023" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <YoutubePlayer src={"https://www.youtube.com/embed/OwLbJpfCA3s?si=yBU1Pc3UzVIzWgdu"}/>    
-                </li>
-
-            <li className="mb-10 ml-6">            
-                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                    <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                    </svg>
-                </span>
-                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Platformer V3</h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Version 3 of a simple platformer written from scratch using HTML Canvas, JS, and CSS. Includes a built in level editor as well as level storage on a server. Custom levels can also be uploaded to the server.</p>
-                <a href="https://github.com/AlexanderGardiner/Platformerv3" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-5 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
-                         
             </li>
+
 
             <li className="mb-10 ml-6">            
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">

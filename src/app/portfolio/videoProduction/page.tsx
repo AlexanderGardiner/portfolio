@@ -1,10 +1,10 @@
 export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-bold pt-10 pb-5">My Video Production Projects</h1>
+      <h1 className="text-center text-5xl font-bold pt-10 pb-5">My Video Production Projects</h1>
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
-      <div className="flex items-center justify-center py-5 max-w-2xl">
-        <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
+      <div className="w-72 md:w-screen flex items-center justify-center py-5 max-w-2xl">
+        <ol className="w-full relative border-l border-gray-200 dark:border-gray-700">                  
             
             <li className="mb-10 ml-6">            
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
