@@ -9,7 +9,7 @@ export default function Page() {
             <li className="mb-10 ml-6">            
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">STN Challenge - Commerical</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A 30 second commerical created for the STN Challenge Contest. This project was filmed in around 2 hours and edited in around a day during High School. I was the primary cameramen and the primary editor. The prompt was to promote an app that you created, and to include a clear catchphrase in the commerical.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A 30 second commerical created for the STN Challenge Contest <a className="text-highlight hover:text-white" href="https://studenttelevision.com/stn-challenge">https://studenttelevision.com/stn-challenge/</a>. This project was filmed in around 2 hours and edited in around a day during High School. I was the primary cameramen and the primary editor. The prompt was to promote an app that you created, and to include a clear catchphrase in the commerical.</p>
                 <video className="w-full" controls>
                     <source src="/portfolio/videoProjects/CapitleCommerical.mp4" type="video/mp4"></source>
                     Your browser does not support playing this video.
