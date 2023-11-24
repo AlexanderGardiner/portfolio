@@ -21,7 +21,7 @@ const ProgrammingProject: FC<programmingProjectProps> = ({iframePort, iframePath
         if (isVisible) {
           const iframe = document.createElement('iframe');
           iframe.src = `http://localhost:${iframePort}/${iframePath}`;
-          iframe.className = `fixed w-screen top-0 right-0 aspect-video visible z-40`;
+          iframe.className = `fixed w-screen top-0 right-0 h-screen visible z-40`;
           document.body.appendChild(iframe);
         
           const backgroundDiv = document.createElement('div');

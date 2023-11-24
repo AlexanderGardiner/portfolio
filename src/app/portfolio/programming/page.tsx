@@ -6,8 +6,8 @@ export default function Page() {
     const [isProgrammingProjectVisible, setProgrammingProjectVisible] = useState(false);
 
   return (
-    <div className={`${isProgrammingProjectVisible ? 'overflow-hidden fixed':'overflow-show'} flex flex-col items-center z-10`}>
-      <h1 className="mt-20 text-5xl md:text-5xl font-bold pb-5 pt-0 text-center">My Programming Projects</h1>
+    <div className={`${isProgrammingProjectVisible ? 'overflow-hidden fixed':'overflow-show'} flex flex-col items-center z-10 `}>
+      <h1 className="mt-16 text-6xl md:text-6xl font-bold pb-5 pt-0 text-center">My Programming Projects</h1>
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
       <div className="flex items-center justify-center py-5 max-w-2xl">
         <ol className="w-72 md:w-screen relative border-l border-gray-200 dark:border-gray-700">                  

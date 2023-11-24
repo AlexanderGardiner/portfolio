@@ -4,8 +4,8 @@ export default function Portfolio() {
     <div className="flex flex-col items-left justify-center mt-16">
       <div className="w-4/5 flex flex-col items-left justify-left mx-auto">
         <div className="w-full md:w-full text-center flex flex-col justify-center">
-          <h1 className="text-5xl font-bold">My Resume</h1>
-          <div className="flex grid md:grid-cols-2 gap-4">
+          <h1 className="text-6xl font-bold">My Resume</h1>
+          <div className="flex grid md:grid-cols-2 gap-4 py-5">
           <div>
             <h1 className="text-left justify-left text-3xl font-bold py-10">Experience</h1>
             <ol className="relative border-l border-gray-200 dark:border-gray-700 mr-5">                  
@@ -94,7 +94,7 @@ export default function Portfolio() {
             </ol>
 
             <h1 className="text-left justify-left text-2xl font-bold py-5">Video Production</h1>
-            <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
+            <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-5">                  
               <li className="text-left justify-left mb-10 ml-6"> 
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                     <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">

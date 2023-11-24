@@ -46,14 +46,14 @@ const ContactForm = () => {
         <div className="w-full md:w-full text-center items-center flex flex-col justify-center ">
           <div className="w-4/5 mx-auto">
           <div className="flex items-center text-center ">
-            <h1 className="mb-4 md:text-7xl text-6xl font-bold text-center text-gray-900 dark:text-white mx-auto">Contact me</h1>
+            <h1 className="mb-4 md:text-6xl text-5xl font-bold text-center text-gray-900 dark:text-white mx-auto">Contact me</h1>
           </div>
           
           <div className="flex grid md:grid-cols-2 gap-4 max-w-sm md:max-w-xl mx-auto">
             <div className="flex items-center md:mx-10 justify-center mx-auto md:mr-40">
               <section className="">
                 <div className="py-8 md:py-16 md:px-4 mx-auto items-center max-w-md md:w-xl md:max-w-xl">
-                    <h2 className="mb-4 lg:text-7xl md:text-5xl md:px-44 text-center text-4xl font-bold text-center text-gray-900 dark:text-white w-lg pb-5">Get In Touch</h2>
+                    <h2 className="mb-4 lg:text-3xl md:text-5xl md:px-44 text-center text-4xl font-bold text-center text-gray-900 dark:text-white w-xl max-w-xl pb-5">Get In Touch</h2>
                     <form action={onSubmit} className="space-y-8">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">Your email</label>
