@@ -81,7 +81,7 @@ export default function Page() {
                     onVisibilityChange={setProgrammingProjectVisible} 
                     iframePort={"8003"} 
                     iframePath=""
-                    imageWidth={400}
+                    imageWidth={250}
                     imageURL={"/portfolio/programmingProjects/OctoScout.png"} 
                     imageAltText={"Photo of Octo Scout"} />              
             </li>

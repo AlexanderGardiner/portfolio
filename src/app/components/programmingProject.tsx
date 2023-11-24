@@ -57,7 +57,7 @@ const ProgrammingProject: FC<programmingProjectProps> = ({iframePort, iframePath
                     alt={imageAltText}
                     width={imageWidth}
                     height={1000}
-                    className={`h-44 md:h-full p-5 w-auto dark:shadow-white-800 shadow-xl hover:scale-105 z-5`}
+                    className={`h-full md:h-full p-5 w-auto dark:shadow-white-800 shadow-xl hover:scale-105 z-5`}
                     />
 
             </a>

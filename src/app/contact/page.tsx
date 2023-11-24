@@ -12,18 +12,14 @@ const ContactForm = () => {
     subject: '',
     body: '',
   });
-  // initialises the powerful hook that is in charge of executing the
-  // reCAPTCHA behind the scenes.
+
   const { executeRecaptcha } = useGoogleReCaptcha()
 
   async function onSubmit() {
-    // if the component is not mounted yet
     if (!executeRecaptcha) {
       return
     }
-    // receive a token
     const token = await executeRecaptcha("onSubmit")
-    // validate the token via the server action we've created previously
     const verified = await verifyCaptchaAction(token)
 
     if (verified) {
@@ -36,8 +32,7 @@ const ContactForm = () => {
             body: form,
           })
     }
-    // here you would give an error message or just ignore
-    // the form submission
+
   }
   return (
         
@@ -49,11 +44,11 @@ const ContactForm = () => {
             <h1 className="mb-4 md:text-6xl text-5xl font-bold text-center text-gray-900 dark:text-white mx-auto">Contact me</h1>
           </div>
           
-          <div className="flex grid md:grid-cols-2 gap-4 max-w-sm md:max-w-xl mx-auto">
-            <div className="flex items-center md:mx-10 justify-center mx-auto md:mr-40">
+          <div className="flex grid md:grid-cols-2 gap-4">
+            <div className="flex items-center md:mx-10 justify-center mx-auto md:mr-20">
               <section className="">
                 <div className="py-8 md:py-16 md:px-4 mx-auto items-center max-w-md md:w-xl md:max-w-xl">
-                    <h2 className="mb-4 lg:text-3xl md:text-5xl md:px-44 text-center text-4xl font-bold text-center text-gray-900 dark:text-white w-xl max-w-xl pb-5">Get In Touch</h2>
+                    <h2 className="mb-4 lg:text-4xl md:text-5xl text-center text-4xl font-bold text-center text-gray-900 dark:text-white pb-5 md:w-96">Get In Touch</h2>
                     <form action={onSubmit} className="space-y-8">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">Your email</label>
@@ -73,7 +68,7 @@ const ContactForm = () => {
               </section>
             </div>
           
-            <div className="flex flex-col items-center text-center justify-center md:ml-40">
+            <div className="flex flex-col items-center text-center justify-center md:ml-20">
               <div className="py-5">
                 <h1 className="text-4xl font-bold pb-5">Email</h1>
                 <a href="mailto:contact@alexandergardiner.com" className="lg:text-4xl md:text-3xl vtext-lg font-bold text-highlight max-w-sm">contact@alexandergardiner.com</a>
