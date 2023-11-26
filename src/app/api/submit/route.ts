@@ -1,4 +1,6 @@
-const nodemailer = require("nodemailer").mail;
+import { NextRequest, NextResponse } from "next/server";
+
+const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   host: "mail.alexandergardiner.com",
   port: 465,
@@ -9,21 +11,18 @@ const transporter = nodemailer.createTransport({
   },
   
 });
-export async function POST(
-  req: { formData: () => any; }
-) {
-  const data = await req.formData();
-  console.log(data.get("email"))
-  const info = await nodemailer({
-    from: data.get("email"), // sender address
+export async function POST(req: NextRequest) {
+  const { email, subject, body } = await req.json();
+  console.log(email);
+  const info = await transporter.sendMail({
+    from: email, // sender address
     to: "contact@alexandergardiner.com", // list of receivers
-    subject: data.get("subject"), // Subject line
-    text: data.get("body"), // plain text body
+    subject: subject, // Subject line
+    text: body, // plain text body
   });
 
   console.log("Message sent: %s", info.messageId);
   
-  return new Response('Success!', {
-    status: 200  
-  })
+  return NextResponse.json({ message: 'Email sent' });
+
 }

@@ -23,14 +23,13 @@ const ContactForm = () => {
     const verified = await verifyCaptchaAction(token)
 
     if (verified) {
-        const form = new FormData();
-        form.append('email', formData.email);
-        form.append('subject', formData.subject);
-        form.append('body', formData.body);
         const response = await fetch('/api/submit', {
             method: 'POST',
-            body: form,
+            body: JSON.stringify({'email':formData.email, 'subject':formData.subject, 'body':formData.body}),
           })
+        if (response.status==200) {
+          alert("Contact form submitted!");
+        }
     }
 
   }
