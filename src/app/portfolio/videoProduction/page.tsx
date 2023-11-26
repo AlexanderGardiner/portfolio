@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center ">
-      <h1 className="text-center text-6xl font-bold pb-5">My Video Production Projects</h1>
+      <h1 className="mt-16 text-6xl md:text-6xl font-bold pb-5 pt-0 text-center">My Video Production Projects</h1>
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
       <div className="w-72 md:w-screen flex items-center justify-center py-5 max-w-2xl">
         <ol className="w-full relative border-l border-gray-200 dark:border-gray-700">                  
