@@ -8,11 +8,11 @@ export default function Page() {
             
             <li className="mb-10 ml-6">            
                 <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
-                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">STN Challenge - Commerical</h3>
+                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">STN Challenge - Commercial</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A 30 second commerical created for the STN Challenge Contest <a className="text-highlight hover:text-white" href="https://studenttelevision.com/stn-challenge">https://studenttelevision.com/stn-challenge/</a>. This project was filmed in around 2 hours and edited in around a day during High School. I was the primary cameramen and the primary editor. The prompt was to promote an app that you created, and to include a clear catchphrase in the commerical.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A 30 second commercial created for the STN Challenge Contest <a className="text-highlight hover:text-white" href="https://studenttelevision.com/stn-challenge">https://studenttelevision.com/stn-challenge/</a>. This project was filmed in around 2 hours and edited in around a day during High School. I was the primary cameramen and the primary editor. The prompt was to promote an app that you created, and to include a clear catchphrase in the commercial.</p>
                 <video className="w-full" controls>
-                    <source src="/portfolio/videoProjects/CapitleCommerical.mp4" type="video/mp4"></source>
+                    <source src="/portfolio/videoProjects/CapitleCommercial.mp4" type="video/mp4"></source>
                     Your browser does not support playing this video.
                 </video>
             </li>
@@ -90,7 +90,7 @@ export default function Page() {
                 <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>             
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">STN Challenge - Nat Sound</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A video package creater for the 2022 STN Challenge under the category of "Nat Sound" <a className="text-highlight hover:text-white" href="https://studenttelevision.com/stn-challenge-prompts">https://studenttelevision.com/stn-challenge-prompts/</a>. The prompt was Rhythm of the Street and we chose to showcase a local musician who often played at a marketplace nearby. I was one of the primary videographers, and one of the primary editors.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A video package created for the 2022 STN Challenge under the category of "Nat Sound" <a className="text-highlight hover:text-white" href="https://studenttelevision.com/stn-challenge-prompts">https://studenttelevision.com/stn-challenge-prompts/</a>. The prompt was Rhythm of the Street and we chose to showcase a local musician who often played at a marketplace nearby. I was one of the primary videographers, and one of the primary editors.</p>
                 <video className="w-full" controls>
                     <source src="/portfolio/videoProjects/STNChallengeNatSound.mp4" type="video/mp4"></source>
                     Your browser does not support playing this video.

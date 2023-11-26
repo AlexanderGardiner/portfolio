@@ -44,7 +44,7 @@ export default function Page() {
                 <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div> 
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Issue Tracker</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project managment program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and uses Passport for user authentication. Supports custom projects, file uploads, as well as user managment.</p>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">A customizable web-based project management program built with a HTML, JS and CSS frontend, and NodeJS (Express) backend. Uses MongoDB to store data and uses Passport for user authentication. Supports custom projects, file uploads, as well as user management.</p>
                 <a href="https://github.com/AlexanderGardiner/IssueTracker" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Link to Github</a>
                 <ProgrammingProject 
                     onVisibilityChange={setProgrammingProjectVisible} 
