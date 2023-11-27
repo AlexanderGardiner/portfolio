@@ -13,7 +13,7 @@ export default function Page() {
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>
       <div className="flex items-center justify-center py-5 max-w-2xl">
         <ol className="w-72 md:w-screen relative border-l border-gray-200 dark:border-gray-700">                  
-            <li className="h-60 mb-60 ml-6 md:mb-96">            
+            <li className="h-96 md:h-full mb-52 ml-6 md:mb-0">            
                 <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div> 
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Slime Mould Simulation</h3>
                 <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023</time>
