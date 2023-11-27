@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"cd programmingProjects\\IssueTracker\\src && node server.js\" \"cd programmingProjects\\octo-scout && node index.js\" \"cd programmingProjects\\ && node staticServer.js\"",
     "build": "next build",
     "start": "concurrently \"next start\" \"cd programmingProjects\\IssueTracker\\src && node server.js\" \"cd programmingProjects\\octo-scout && node index.js\" \"cd programmingProjects\\ && node staticServer.js\"",
     "lint": "next lint"
