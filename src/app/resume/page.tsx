@@ -3,9 +3,9 @@ export default function Portfolio() {
     
     <div className="flex flex-col items-left justify-center mt-16">
       <div className="w-4/5 flex flex-col items-left justify-left mx-auto">
-        <div className="w-full md:w-full text-center flex flex-col justify-center">
+        <div className="w-full lg:w-full text-center flex flex-col justify-center">
           <h1 className="text-6xl font-bold">My Resume</h1>
-          <div className="flex grid md:grid-cols-2 gap-4 py-5">
+          <div className="flex grid lg:grid-cols-2 gap-4 py-5">
           <div>
             <h1 className="text-left justify-left text-3xl font-bold py-10">Experience</h1>
             <ol className="relative border-l border-gray-200 dark:border-gray-700 mr-5">                  
