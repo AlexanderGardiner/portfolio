@@ -13,3 +13,9 @@
 [submodule "programmingProjects/static/ElectromagneticParticleSimulator"]
 	path = programmingProjects/static/ElectromagneticParticleSimulator
 	url = https://github.com/AlexanderGardiner/ElectromagneticParticleSimulator
+[submodule "programmingProjects/webcut"]
+	path = programmingProjects/webcut
+	url = https://github.com/AlexanderGardiner/webcut
+[submodule "programmingProjects/OctoScout2024v2"]
+	path = programmingProjects/OctoScout2024v2
+	url = https://github.com/AlexanderGardiner/OctoScout2024v2
