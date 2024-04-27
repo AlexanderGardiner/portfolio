@@ -12,6 +12,207 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              STN Convention - Crazy 8s
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              2024
+            </time>
+            <div className="flex items-center my-4">
+              <div className="pr-6">
+                <FaCamera
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaCut
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaVolumeUp
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+            </div>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              A morning show created for the 2024 STN Convention.{" "}
+              <a
+                className="text-highlight hover:text-white"
+                href="https://www.stnconvention.com/"
+              >
+                https://www.stnconvention.com/
+              </a>
+              . This was created by the DPNews team of around 30 students from
+              my high school. It was created over the course of only 8 hours. I
+              was in the intro and graphics team. We created all of the graphics
+              seen within the show, including transitions between segments, as
+              well as the intro and outro.
+            </p>
+            <iframe
+              className="w-full aspect-video"
+              allowFullScreen
+              src="https://drive.google.com/file/d/19ziBBRtEH7nofOq1hEvMvvtiufRDzxb_/preview"
+            ></iframe>
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              STN Convention - Nat Package
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              2024
+            </time>
+            <div className="flex items-center my-4">
+              <div className="pr-6">
+                <FaCamera
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaCut
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaVolumeUp
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+            </div>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              A Nat Package created for the 2024 STN Convention.{" "}
+              <a
+                className="text-highlight hover:text-white"
+                href="https://www.stnconvention.com/"
+              >
+                https://www.stnconvention.com/
+              </a>
+              . For this category we could not have a stand up and could only
+              use interviews or audio we captured of the location. It was
+              created in only 6 hours, 3 hours to shoot and 3 hours to edit. I
+              was one of the primary cameramen and one of primary editors.
+            </p>
+            <iframe
+              className="w-full aspect-video"
+              allowFullScreen
+              src="https://drive.google.com/file/d/1yIszH-f0OACV3ISTXHcp2GrDqtALeYpu/preview"
+            ></iframe>
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Ultimate Frisbee Team
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              2024
+            </time>
+            <div className="flex items-center my-4">
+              <div className="pr-6">
+                <FaCamera
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaCut
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaVolumeUp
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+            </div>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              A video package created to showcase the community surrounding our
+              local ultimate frisbee team.{" "}
+              <a
+                className="text-highlight hover:text-white"
+                href="https://www.sbyouthultimate.org/"
+              >
+                https://www.sbyouthultimate.org/
+              </a>
+              . I was not involved with the filming of this project, however, I
+              was the primary editor. It was edited over the course of a couple
+              days during high school.
+            </p>
+            <iframe
+              className="w-full aspect-video"
+              allowFullScreen
+              src="https://drive.google.com/file/d/1D0K3ISv_eCBsW9N8-NHzcFRjaM96QUjn/preview"
+            ></iframe>
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              STN Convention Practice - Nat Package
+            </h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              2024
+            </time>
+            <div className="flex items-center my-4">
+              <div className="pr-6">
+                <FaCamera
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaCut
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaVolumeUp
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+            </div>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              A Nat Package created as practice for the 2024 STN Convention.{" "}
+              <a
+                className="text-highlight hover:text-white"
+                href="https://www.stnconvention.com/"
+              >
+                https://www.stnconvention.com/
+              </a>
+              . For this category we could not have a stand up and could only
+              use interviews or audio we captured of the location. It was edited
+              in only 3 hours, and also filmed in around 3 hours. I was one of
+              the primary cameramen and the primary editor.
+            </p>
+            <iframe
+              className="w-full aspect-video"
+              allowFullScreen
+              src="https://drive.google.com/file/d/1hAdSbs-anZhddJMQ5Mu1sA5AEcjboE2R/preview"
+            ></iframe>
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
               STN Fall Nationals - Mobile Journalism
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">

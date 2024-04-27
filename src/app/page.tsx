@@ -15,7 +15,7 @@ export default function Home() {
               This website showcases my portfolio, as well as my resume. It
               focuses on the two primary skills I have been building,
               programming and video production. I have been programming for over
-              7 years in various different programming languages (see my
+              8 years in various different programming languages (see my
               Resume). I have been shooting and editing videos for around 3
               years, and during this time I have attended various video
               production conferences, and contests, and have received awards for

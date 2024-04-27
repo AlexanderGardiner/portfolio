@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"cd programmingProjects\\IssueTracker\\src && node server.js\" \"cd programmingProjects\\octo-scout && node index.js\" \"cd programmingProjects\\ && node staticServer.js\"",
+    "dev": "concurrently \"next dev\" \"cd programmingProjects\\IssueTracker\\src && node server.js\" \"cd programmingProjects\\octo-scout && node index.js\" \"cd programmingProjects\\ && node staticServer.js\" \"cd programmingProjects\\webcut && next dev -p 8004\" \"cd programmingProjects\\OctoScout2024v2 && node server.js\"",
     "build": "next build",
-    "start": "concurrently \"next start\" \"cd programmingProjects\\IssueTracker\\src && node server.js\" \"cd programmingProjects\\octo-scout && node index.js\" \"cd programmingProjects\\ && node staticServer.js\"",
+    "start": "concurrently \"next start\" \"cd programmingProjects\\IssueTracker\\src && node server.js\" \"cd programmingProjects\\octo-scout && node index.js\" \"cd programmingProjects\\ && node staticServer.js\" \"cd programmingProjects\\webcut && next start -p 8004\" \"cd programmingProjects\\OctoScout2024v2 && node server.js\"",
     "lint": "next lint"
   },
   "dependencies": {
