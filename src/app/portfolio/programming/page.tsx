@@ -23,7 +23,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Octo Scout
+              octoscout2024
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2024
@@ -78,11 +78,11 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"9084"}
+              iframePort={"3004"}
               iframePath=""
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/OctoScout2024.png"}
-              imageAltText={"Photo of Octo Scout"}
+              imageAltText={"Photo of octoscout2024"}
             />
           </li>
 
@@ -130,7 +130,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Webcut
+              webcut
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -156,7 +156,7 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"8004"}
+              iframePort={"3001"}
               iframePath="/"
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/Webcut.png"}
@@ -166,7 +166,7 @@ export default function Page() {
           <li className="h-96 md:h-full mb-52 ml-6 md:mb-0">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Slime Mould Simulation
+              slimemouldsim
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -223,8 +223,8 @@ export default function Page() {
 
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"8002"}
-              iframePath="Slime-Mould"
+              iframePort={"3005"}
+              iframePath="/"
               imageWidth={350}
               imageURL={"/portfolio/programmingProjects/SlimeMould.png"}
               imageAltText={"Photo of Slime Mould Simulation"}
@@ -271,7 +271,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Issue Tracker
+              issuetracker
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -326,7 +326,7 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"8001"}
+              iframePort={"3002"}
               iframePath=""
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/IssueTracker.png"}
@@ -337,7 +337,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Octo Scout
+              octoscout2023
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -388,7 +388,7 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"8003"}
+              iframePort={"3003"}
               iframePath=""
               imageWidth={250}
               imageURL={"/portfolio/programmingProjects/OctoScout2023.png"}
@@ -437,7 +437,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Electromagnetic Particle Simulation
+              electromagneticparticlesim
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2022
@@ -478,8 +478,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"8002"}
-              iframePath="ElectromagneticParticleSimulator"
+              iframePort={"3006"}
+              iframePath="/"
               imageWidth={1000}
               imageURL={
                 "/portfolio/programmingProjects/ElectromagneticParticles.png"
@@ -491,7 +491,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              Platformer V2
+              platformerv2
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2022
@@ -532,8 +532,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"8002"}
-              iframePath="Platformerv2"
+              iframePort={"3007"}
+              iframePath="/"
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/Platformerv2.png"}
               imageAltText={"Photo of Platformerv2"}
