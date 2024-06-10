@@ -120,13 +120,6 @@ export default function Page() {
             </time>
             <div className="flex items-center my-4">
               <div className="pr-6">
-                <FaCamera
-                  className="scale-150"
-                  style={{ color: "#6a84f4" }}
-                  size={30}
-                />
-              </div>
-              <div className="pr-6">
                 <FaCut
                   className="scale-150"
                   style={{ color: "#6a84f4" }}
