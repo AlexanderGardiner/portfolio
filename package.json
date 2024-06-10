@@ -6,6 +6,9 @@
     "dev": "./dev.sh",
     "build": "./build.sh",
     "start": "./start.sh",
+    "dev-windows": "start dev.bat",
+    "build-windows": "start build.bat",
+    "start-windows": "start start.bat",
     "lint": "next lint"
   },
   "dependencies": {
