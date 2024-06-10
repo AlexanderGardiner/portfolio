@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "start dev.bat",
-    "build": "start build.bat",
-    "start": "start start.bat",
+    "dev": "./dev.sh",
+    "build": "./build.sh",
+    "start": "./start.sh",
     "lint": "next lint"
   },
   "dependencies": {
