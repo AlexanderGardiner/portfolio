@@ -1,0 +1,21 @@
+[submodule "programmingProjects/octoscout2024"]
+	path = programmingProjects/octoscout2024
+	url = https://github.com/alexandergardiner/octoscout2024.git
+[submodule "programmingProjects/octoscout2023"]
+	path = programmingProjects/octoscout2023
+	url = https://github.com/alexandergardiner/octoscout2023.git
+[submodule "programmingProjects/slimemouldsim"]
+	path = programmingProjects/slimemouldsim
+	url = https://github.com/alexandergardiner/slimemouldsim.git
+[submodule "programmingProjects/electromagneticparticlesim"]
+	path = programmingProjects/electromagneticparticlesim
+	url = https://github.com/alexandergardiner/electromagneticparticlesim.git
+[submodule "programmingProjects/webcut"]
+	path = programmingProjects/webcut
+	url = https://github.com/alexandergardiner/webcut.git
+[submodule "programmingProjects/issuetracker"]
+	path = programmingProjects/issuetracker
+	url = https://github.com/alexandergardiner/issuetracker.git
+[submodule "programmingProjects/platformerv2"]
+	path = programmingProjects/platformerv2
+	url = https://github.com/alexandergardiner/platformerv2.git
