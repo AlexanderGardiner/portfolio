@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# portfolio README
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Welcome to my portfolio website built with Next.js and Tailwind CSS! This website showcases my programming and video production projects. You can view my programming projects directly from within the portfolio. Additionally, you'll find my resume and a contact page for reaching out to me.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Built With
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img src="https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js&logoColor=white" height="25"><!---->
+<img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" height="25"><!---->
+<img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" height="25"><!---->
+<img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" height="25"><!---->
+<img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white" height="25"><!---->
+<img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white" height="25"><!---->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Programming Projects**: Explore my latest coding projects with detailed descriptions, live demos and GitHub repositories.
 
-## Learn More
+- **Video Production Projects**: Check out my video production work, including various packages and PSAs about and for the community.
 
-To learn more about Next.js, take a look at the following resources:
+- **Resume**: View my resume online to learn more about my skills and experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Contact Page**: Reach out to me easily via the contact form.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/alexandergardiner/portfolio.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```sh
+   cd portfolio
+   ```
+3. **Install Dependencies**:
+   ```sh
+   npm install
+   ```
+4. **Initialize Submodules**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   git submodule init
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. **Update Submodules**:
+
+   ```
+   git submodule update
+   ```
+
+6. **Build the Server**:
+
+   - **Windows**:
+     ```
+     npm run build-windows
+     ```
+   - **Linux**:
+     ```
+     npm run build
+     ```
+
+7. **Start the Server**:
+   - **Windows**:
+     ```
+     npm run start-windows
+     ```
+   - **Linux**:
+     ```
+     npm run start
+     ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

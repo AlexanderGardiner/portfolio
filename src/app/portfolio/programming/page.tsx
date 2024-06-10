@@ -60,15 +60,14 @@ export default function Page() {
               <h5 className="text-lg mr-3 text-highlight font-bold">Express</h5>
             </div>
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              A customizable web-based scouting system for the First Robotics
-              Competition. Made for team 9084. Made for the 2024 competition
-              Crescendo. Data is inputted on a web user interface and uploaded
-              to a server for collection, stored as csv files for easy data
-              analysis. I added multiple upgrades this year to the app, I
-              divided the different sections of the app into different pages,
-              and generally simplified the UI. I also added a data analysis and
-              comparison tool built within the app itself, to limit the amount
-              of csv work that needs to be done.
+              This project is the updated version of the custom scouting system
+              developed for FRC Team 9084, tailored for the 2024 game. This
+              iteration builds on the foundation of its predecessor, enhancing
+              data collection, storage, and analysis capabilities to provide an
+              even more robust and efficient scouting solution. With a focus on
+              data visualization using CanvasJS, octoscout2024 enabled the team
+              to gain deeper insights into their performance and strategize more
+              effectively.
             </p>
             <a
               href="https://github.com/AlexanderGardiner/OctoScout2024v2"
@@ -202,8 +201,11 @@ export default function Page() {
               </div>
             </div>
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              A simple slime mould simulation written from scratch using HTML
-              Canvas, JS, and CSS. Inspired by this blog post:{" "}
+              This project is a simplified simulation of slime mold behavior,
+              implemented using HTML, CSS, and JavaScript. The primary challenge
+              in developing this simulation was optimizing it to efficiently run
+              in the browser, especially when handling a large number of agents.
+              Inspired by this blog post:{" "}
               <a
                 className="text-highlight dark:text-white hover:text-black dark:hover:text-highlight"
                 href="https://cargocollective.com/sagejenson/physarum"
@@ -521,8 +523,10 @@ export default function Page() {
             </div>
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
               Version 2 of a platformer written from scratch using HTML Canvas,
-              JS, and CSS. Includes level loading and previously uploaded user
-              times (for a leaderboard) to another server hosted by a friend.
+              JS, and CSS. This game was created when I was in High School, and
+              played by a large number of my friends who competed for the
+              fastest times. Includes level loading and previously uploaded user
+              times to another server hosted by a friend.
             </p>
             <a
               href="https://github.com/AlexanderGardiner/Platformerv2"
