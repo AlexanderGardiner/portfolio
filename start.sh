@@ -1,44 +1,28 @@
-#!/bin/bash
+# Directories and ports for npm start
+PROJECTS=(
+  ".:3000"
+  "./programmingProjects/webcut:3001"
+  "./programmingProjects/issuetracker/src:3002"
+  "./programmingProjects/octoscout2023:3003"
+  "./programmingProjects/octoscout2024:3004"
+  "./programmingProjects/slimemouldsim:3005"
+  "./programmingProjects/electromagneticparticlesim:3006"
+  "./programmingProjects/platformerv2:3007"
+)
 
-echo "Starting portfolio server..."
-PORT=3000
-next start &
+CURRENT_DIR=$(pwd)
 
-echo "Starting webcut server..."
-PORT=3001
-(cd programmingProjects/webcut && npm run start) &
+# Loop through each directory and run npm start with assigned port
+for PROJECT in "${PROJECTS[@]}"; do
+  DIR="${PROJECT%%:*}"
+  PORT="${PROJECT##*:}"
 
-echo "Starting issuetracker server..."
-PORT=3002
-(cd programmingProjects/issuetracker/src && npm run start) &
-
-echo "Starting octoscout2023 server..."
-PORT=3003
-(cd programmingProjects/octoscout2023 && npm run start) &
-
-echo "Starting octoscout2024 server..."
-PORT=3004
-(cd programmingProjects/octoscout2024 && npm run start) &
-
-echo "Starting slimemouldsim server..."
-PORT=3005
-(cd programmingProjects/slimemouldsim && npm run start) &
-
-echo "Starting electromagneticparticlesim server..."
-PORT=3006
-(cd programmingProjects/electromagneticparticlesim && npm run start) &
-
-echo "Starting platformerv2 server..."
-PORT=3007
-(cd programmingProjects/platformerv2 && npm run start) &
-
-echo "Servers started successfully."
-
-echo ""
-read -n 1 -s -r -p "Press any key to stop servers and exit..."
-
-echo ""
-echo "Stopping servers..."
-pkill -f node
-
-echo "Servers stopped."
+  if [ -d "$DIR" ]; then
+    echo "Starting npm in $DIR on port $PORT"
+    cd "$DIR"
+    PORT=$PORT npm start &
+    cd "$CURRENT_DIR"
+  else
+    echo "Directory $DIR does not exist"
+  fi
+done

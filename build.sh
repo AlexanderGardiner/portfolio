@@ -1,9 +1,21 @@
-#!/bin/bash
+# Directories and ports for npm start
+PROJECTS=(
+  "."
+  "./programmingProjects/webcut"
+)
 
-echo "Building portfolio server..."
-PORT=3000
-next build &
+CURRENT_DIR=$(pwd)
 
-echo "Building webcut server..."
-PORT=3001
-(cd programmingProjects/webcut && npm run build) &
+# Loop through each directory and run npm start with assigned port
+for PROJECT in "${PROJECTS[@]}"; do
+  DIR="${PROJECT%%:*}"
+
+  if [ -d "$DIR" ]; then
+    echo "Building npm in $DIR"
+    cd "$DIR"
+    npm build &
+    cd "$CURRENT_DIR"
+  else
+    echo "Directory $DIR does not exist"
+  fi
+done
