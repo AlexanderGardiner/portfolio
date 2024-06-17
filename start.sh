@@ -18,11 +18,18 @@ for PROJECT in "${PROJECTS[@]}"; do
   DIR="${PROJECT%:*}"   # Use % to get directory part before the colon
   PORT="${PROJECT#*:}"  # Use # to get port part after the colon
 
+  echo "Processing project: $PROJECT"
+  echo "Resolved directory: $DIR"
+  echo "Assigned port: $PORT"
+
   if [ -d "$DIR" ]; then
-    echo "Starting npm in $DIR on port $PORT in a new screen session"
+    echo "Directory $DIR exists. Starting npm in $DIR on port $PORT in a new screen session"
     screen -S "server_$PORT" -d -m bash -c "
       echo 'Starting npm in $DIR on port $PORT'
-      cd \"$CURRENT_DIR/$DIR\" && PORT=\"$PORT\" npm start
+      echo 'Changing to directory: $CURRENT_DIR/$DIR'
+      cd \"$CURRENT_DIR/$DIR\"
+      echo 'Current directory after cd: ' \$(pwd)
+      PORT=\"$PORT\" npm start
     "
   else
     echo "Directory $DIR does not exist"
