@@ -13,7 +13,7 @@ for PROJECT in "${PROJECTS[@]}"; do
   if [ -d "$DIR" ]; then
     echo "Building npm in $DIR"
     cd "$DIR"
-    npm build &
+    npm run build &
     cd "$CURRENT_DIR"
   else
     echo "Directory $DIR does not exist"
