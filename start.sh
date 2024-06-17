@@ -1,4 +1,3 @@
-# Directories and ports for npm start
 PROJECTS=(
   ".:3000"
   "./programmingProjects/webcut:3001"
@@ -12,17 +11,21 @@ PROJECTS=(
 
 CURRENT_DIR=$(pwd)
 
-# Loop through each directory and run npm start with assigned port
+# Loop through each directory and run npm start with the assigned port
 for PROJECT in "${PROJECTS[@]}"; do
-  DIR="${PROJECT%%:*}"
-  PORT="${PROJECT##*:}"
+  (
+    DIR="${PROJECT%%:*}"
+    PORT="${PROJECT##*:}"
 
-  if [ -d "$DIR" ]; then
-    echo "Starting npm in $DIR on port $PORT"
-    cd "$DIR"
-    PORT=$PORT npm start 
-    cd "$CURRENT_DIR" &
-  else
-    echo "Directory $DIR does not exist"
-  fi
+    if [ -d "$DIR" ]; then
+      echo "Starting npm in $DIR on port $PORT"
+      cd "$DIR"
+      PORT=$PORT npm start
+    else
+      echo "Directory $DIR does not exist"
+    fi
+  ) &
 done
+
+# Wait for all background processes to finish
+wait
