@@ -1,14 +1,14 @@
 #!/bin/bash
 
 PROJECTS=(
-  ".:3000"
-  "./programmingProjects/webcut:3001"
-  "./programmingProjects/issuetracker/src:3002"
-  "./programmingProjects/octoscout2023:3003"
-  "./programmingProjects/octoscout2024:3004"
-  "./programmingProjects/slimemouldsim:3005"
-  "./programmingProjects/electromagneticparticlesim:3006"
-  "./programmingProjects/platformerv2:3007"
+  "$PWD:3000"
+  "$PWD/programmingProjects/webcut:3001"
+  "$PWD/programmingProjects/issuetracker/src:3002"
+  "$PWD/programmingProjects/octoscout2023:3003"
+  "$PWD/programmingProjects/octoscout2024:3004"
+  "$PWD/programmingProjects/slimemouldsim:3005"
+  "$PWD/programmingProjects/electromagneticparticlesim:3006"
+  "$PWD/programmingProjects/platformerv2:3007"
 )
 
 CURRENT_DIR=$(pwd)
@@ -26,10 +26,9 @@ for PROJECT in "${PROJECTS[@]}"; do
     echo "Directory $DIR exists. Starting npm in $DIR on port $PORT in a new screen session"
     screen -S "server_$PORT" -d -m bash -c "
       echo 'Starting npm in $DIR on port $PORT'
-      echo 'Changing to directory: $CURRENT_DIR/$DIR'
-      cd \"$CURRENT_DIR/$DIR\"
+      cd \"$DIR\"
       echo 'Current directory after cd: ' \$(pwd)
-      PORT=\"$PORT\" npm start
+      PORT=\"$PORT\" npm start --prefix \"$DIR\"
     "
   else
     echo "Directory $DIR does not exist"
