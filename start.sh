@@ -13,20 +13,21 @@ PROJECTS=(
 
 CURRENT_DIR=$(pwd)
 
-# Loop through each directory and run npm start with the assigned port
+# Loop through each directory and run npm start with the assigned port in a screen session
 for PROJECT in "${PROJECTS[@]}"; do
-  (
-    DIR="${PROJECT%%:*}"
-    PORT="${PROJECT##*:}"
+  DIR="${PROJECT%%:*}"
+  PORT="${PROJECT##*:}"
 
-    if [ -d "$DIR" ]; then
-      echo "Starting npm in $DIR on port $PORT in a new screen session"
-      cd "$DIR"
-      screen -dmS "server_$PORT" bash -c "PORT=$PORT npm start"
-    else
-      echo "Directory $DIR does not exist"
-    fi
-  )
+  if [ -d "$DIR" ]; then
+    echo "Starting npm in $DIR on port $PORT in a new screen session"
+    screen -S "server_$PORT" -d -m bash -c "
+      echo 'Starting npm in $DIR on port $PORT'
+      cd '$DIR'
+      PORT='$PORT' npm start
+    "
+  else
+    echo "Directory $DIR does not exist"
+  fi
 done
 
 echo "All servers are starting in separate screen sessions."
