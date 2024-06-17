@@ -15,14 +15,14 @@ CURRENT_DIR=$(pwd)
 
 # Loop through each directory and run npm start with the assigned port in a screen session
 for PROJECT in "${PROJECTS[@]}"; do
-  DIR="${PROJECT%%:*}"
-  PORT="${PROJECT##*:}"
+  DIR="${PROJECT%:*}"   # Use % to get directory part before the colon
+  PORT="${PROJECT#*:}"  # Use # to get port part after the colon
 
   if [ -d "$DIR" ]; then
     echo "Starting npm in $DIR on port $PORT in a new screen session"
     screen -S "server_$PORT" -d -m bash -c "
       echo 'Starting npm in $DIR on port $PORT'
-      cd \"$DIR\" && PORT=\"$PORT\" npm start
+      cd \"$CURRENT_DIR/$DIR\" && PORT=\"$PORT\" npm start
     "
   else
     echo "Directory $DIR does not exist"
