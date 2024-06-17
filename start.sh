@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PROJECTS=(
   ".:3000"
   "./programmingProjects/webcut:3001"
@@ -18,14 +20,13 @@ for PROJECT in "${PROJECTS[@]}"; do
     PORT="${PROJECT##*:}"
 
     if [ -d "$DIR" ]; then
-      echo "Starting npm in $DIR on port $PORT"
+      echo "Starting npm in $DIR on port $PORT in a new screen session"
       cd "$DIR"
-      PORT=$PORT npm start
+      screen -dmS "server_$PORT" bash -c "PORT=$PORT npm start"
     else
       echo "Directory $DIR does not exist"
     fi
-  ) &
+  )
 done
 
-# Wait for all background processes to finish
-wait
+echo "All servers are starting in separate screen sessions."
