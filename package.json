@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "./dev.sh",
-    "build": "./build.sh",
-    "start": "./start.sh",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "dev-windows": "start dev.bat",
     "build-windows": "start build.bat",
     "start-windows": "start start.bat",
