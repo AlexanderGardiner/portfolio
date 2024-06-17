@@ -2,7 +2,7 @@
 
 echo Starting portfolio server...
 set PORT=3000
-start "portfolio Server" cmd /c "next dev"
+start "portfolio Server" cmd /c "npm run dev"
 
 echo Starting webcut server...
 set PORT=3001

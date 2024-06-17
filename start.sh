@@ -20,8 +20,8 @@ for PROJECT in "${PROJECTS[@]}"; do
   if [ -d "$DIR" ]; then
     echo "Starting npm in $DIR on port $PORT"
     cd "$DIR"
-    PORT=$PORT npm start &
-    cd "$CURRENT_DIR"
+    PORT=$PORT npm start 
+    cd "$CURRENT_DIR" &
   else
     echo "Directory $DIR does not exist"
   fi
