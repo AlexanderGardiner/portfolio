@@ -21,9 +21,8 @@ for PROJECT in "${PROJECTS[@]}"; do
   if [ -d "$DIR" ]; then
     echo "Starting npm in $DIR on port $PORT in a new screen session"
     screen -S "server_$PORT" -d -m bash -c "
-      echo 'Starting npm in \$DIR on port \$PORT'
-      cd '\$DIR'
-      PORT='\$PORT' npm start
+      echo 'Starting npm in $DIR on port $PORT'
+      cd \"$DIR\" && PORT=\"$PORT\" npm start
     "
   else
     echo "Directory $DIR does not exist"
