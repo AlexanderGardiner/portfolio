@@ -77,8 +77,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3004"}
-              iframePath=""
+              iframePort={""}
+              iframePath="octoscout2024"
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/OctoScout2024.png"}
               imageAltText={"Photo of octoscout2024"}
@@ -155,8 +155,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3001"}
-              iframePath="/"
+              iframePort={""}
+              iframePath="webcut"
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/Webcut.png"}
               imageAltText={"Photo of Webcut"}
@@ -225,8 +225,8 @@ export default function Page() {
 
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3005"}
-              iframePath="/"
+              iframePort={""}
+              iframePath="slimemouldsim"
               imageWidth={350}
               imageURL={"/portfolio/programmingProjects/SlimeMould.png"}
               imageAltText={"Photo of Slime Mould Simulation"}
@@ -328,8 +328,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3002"}
-              iframePath=""
+              iframePort={""}
+              iframePath="issuetracker"
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/IssueTracker.png"}
               imageAltText={"Photo of Issue Tracker"}
@@ -390,8 +390,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3003"}
-              iframePath=""
+              iframePort={""}
+              iframePath="octoscout2023"
               imageWidth={250}
               imageURL={"/portfolio/programmingProjects/OctoScout2023.png"}
               imageAltText={"Photo of Octo Scout"}
@@ -473,15 +473,15 @@ export default function Page() {
               electric and magnetic field simulation.
             </p>
             <a
-              href="https://github.com/AlexanderGardiner/ElectromagneticParticleSimulator"
+              href="https://github.com/AlexanderGardiner/electromagneticparticlesim"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
               Link to Github
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3006"}
-              iframePath="/"
+              iframePort={""}
+              iframePath="electromagneticparticlesim"
               imageWidth={1000}
               imageURL={
                 "/portfolio/programmingProjects/ElectromagneticParticles.png"
@@ -536,8 +536,8 @@ export default function Page() {
             </a>
             <ProgrammingProject
               onVisibilityChange={setProgrammingProjectVisible}
-              iframePort={"3007"}
-              iframePath="/"
+              iframePort={""}
+              iframePath="platformerv2"
               imageWidth={1000}
               imageURL={"/portfolio/programmingProjects/Platformerv2.png"}
               imageAltText={"Photo of Platformerv2"}
