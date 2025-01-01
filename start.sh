@@ -9,6 +9,7 @@ PROJECTS=(
   "$PWD/programmingProjects/slimemouldsim:3005"
   "$PWD/programmingProjects/electromagneticparticlesim:3006"
   "$PWD/programmingProjects/platformerv2:3007"
+  "$PWD/programmingProjects/recipescout:3008"
 )
 
 CURRENT_DIR=$(pwd)

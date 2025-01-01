@@ -19,3 +19,6 @@
 [submodule "programmingProjects/platformerv2"]
 	path = programmingProjects/platformerv2
 	url = https://github.com/alexandergardiner/platformerv2.git
+[submodule "programmingProjects/RecipeScout"]
+	path = programmingProjects/RecipeScout
+	url = https://github.com/AlexanderGardiner/RecipeScout

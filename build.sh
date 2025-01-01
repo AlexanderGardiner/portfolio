@@ -2,6 +2,7 @@
 PROJECTS=(
   "."
   "./programmingProjects/webcut"
+  "./programmingProjects/recipescout"
 )
 
 CURRENT_DIR=$(pwd)

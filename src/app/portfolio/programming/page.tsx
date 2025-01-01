@@ -23,6 +23,79 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Recipe Scout
+            </h3>
+            <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              2024
+            </time>
+            <div className="flex items-center my-4">
+              <div className="pr-6">
+                <FaHtml5
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaCss3Alt
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaJs
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <div className="pr-6">
+                <FaNode
+                  className="scale-150"
+                  style={{ color: "#6a84f4" }}
+                  size={30}
+                />
+              </div>
+              <h5 className="text-lg mr-3 text-highlight font-bold">
+                Tailwind CSS
+              </h5>
+              <h5 className="text-lg mr-3 text-highlight font-bold">
+                Daisy UI
+              </h5>
+              <h5 className="text-lg mr-3 text-highlight font-bold">Express</h5>
+            </div>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              This project was made because I wanted to test how I could
+              integrate AI within a project. I selected the task of generating
+              recipes from an image as it seemed to be a good combination of
+              object detection, large language models, and recipe apis. I found
+              that the recipe apis were not necessary as the llm could generate
+              recipes that were satisfactory. This project supports login
+              through google OAuth along with the ability to save recipes to a
+              MongoDB database. Recipes can also be shared on the forum where
+              other users can comment suggestions. Links to view recipes are
+              also possible and settings are available to set a recipe to public
+              or private.
+            </p>
+            <a
+              href="https://github.com/AlexanderGardiner/recipescout"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
+            >
+              Link to Github
+            </a>
+            <ProgrammingProject
+              onVisibilityChange={setProgrammingProjectVisible}
+              iframePort={""}
+              iframePath="recipescout"
+              imageWidth={1000}
+              imageURL={"/portfolio/programmingProjects/recipescout.png"}
+              imageAltText={"Photo of recipescout"}
+            />
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
               octoscout2024
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
