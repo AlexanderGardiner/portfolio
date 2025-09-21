@@ -3,7 +3,7 @@ import { FaCamera, FaCut, FaVolumeUp, FaUser } from "react-icons/fa";
 export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center ">
-      <h1 className="mt-16 text-6xl md:text-6xl font-bold pb-5 pt-0 text-center">
+      <h1 className="mt-16 text-5xl sm:text-5xl md:text-5xl lg:text-6xl font-bold pb-5 pt-0 mx-4 text-center max-w-[70vw]">
         My Video Production Projects
       </h1>
       <hr className="w-2/12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-highlight"></hr>

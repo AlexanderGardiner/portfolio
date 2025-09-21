@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   console.log(email);
   const info = await transporter.sendMail({
     from: email, // sender address
-    to: "contact@alexandergardiner.com", // list of receivers
+    to: "misc@alexandergardiner.com", // list of receivers
     subject: subject, // Subject line
     text: body, // plain text body
   });

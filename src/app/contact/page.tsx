@@ -1,10 +1,9 @@
 "use client"
 
-import { FormEvent, useState } from "react"
+import { useState, useEffect } from "react"
 
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 import { verifyCaptchaAction } from "@/app/_actions/Captcha"
-
+declare const grecaptcha: any;
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,27 +11,51 @@ const ContactForm = () => {
     subject: '',
     body: '',
   });
+  const [grecaptchaReady, setGrecaptchaReady] = useState(false);
+  const SITE_KEY = "6Le_JhkpAAAAAMOKCA19sZ4VbxTGbfV475c-Tj73";
 
-  const { executeRecaptcha } = useGoogleReCaptcha()
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`;
+    script.async = true;
+    script.defer = true;
+    script.onload = () => setGrecaptchaReady(true);
+    document.body.appendChild(script);
+  }, []);
 
-  async function onSubmit() {
-    if (!executeRecaptcha) {
-      return
+  // Function to execute reCAPTCHA
+  const executeRecaptcha = async (action: string): Promise<string | null> => {
+    if (!grecaptchaReady || typeof grecaptcha === "undefined") {
+      console.warn("reCAPTCHA not ready");
+      return null;
     }
-    const token = await executeRecaptcha("onSubmit")
-    const verified = await verifyCaptchaAction(token)
+    try {
+      const token = await grecaptcha.execute(SITE_KEY, { action });
+      return token;
+    } catch (error) {
+      console.error("Failed to execute reCAPTCHA:", error);
+      return null;
+    }
+  };
 
+
+   const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // prevent default form submission
+
+    const token = await executeRecaptcha("onSubmit");
+    if (!token) return;
+
+    const verified = await verifyCaptchaAction(token);
     if (verified) {
-        const response = await fetch('/api/submit', {
-            method: 'POST',
-            body: JSON.stringify({'email':formData.email, 'subject':formData.subject, 'body':formData.body}),
-          })
-        if (response.status==200) {
-          alert("Contact form submitted!");
-        }
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert("Contact form submitted!");
+      }
     }
-
-  }
+  };
   return (
         
     <div className="flex flex-col items-center justify-center mt-16">
@@ -48,7 +71,7 @@ const ContactForm = () => {
               <section className="">
                 <div className="py-8 md:py-16 md:px-4 mx-auto items-center max-w-md md:w-xl md:max-w-xl">
                     <h2 className="mb-4 lg:text-4xl md:text-5xl text-center text-4xl font-bold text-center text-gray-900 dark:text-white pb-5 md:w-96">Get In Touch</h2>
-                    <form action={onSubmit} className="space-y-8">
+                    <form onSubmit={onSubmit} className="space-y-8">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">Your email</label>
                             <input type="email" id="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} value={formData.email} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light max-w-md mx-auto" placeholder="example@example.com" required/>

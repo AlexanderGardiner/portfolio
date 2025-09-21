@@ -1,7 +1,6 @@
 import './globals.css'
 import Navbar from './components/navbar'
 import type { Metadata } from 'next'
-import { Providers } from './components/providers';
 
 export const metadata: Metadata = {
   title: 'Alex Gardiner',
@@ -14,7 +13,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <Providers>
     <html lang="en">
       <body>
         <Navbar />
@@ -23,6 +21,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-    </Providers>
   )
 }
