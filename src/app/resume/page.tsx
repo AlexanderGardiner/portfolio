@@ -4,7 +4,9 @@ export default function Resume() {
   return (
     <div className="flex justify-center items-start mt-16 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-[120vh]">
-        <div className="flex justify-center items-center max-h-[80vh]">
+        {/* Programming Section */}
+        <div className="flex flex-col justify-center items-center max-h-[80vh]">
+          <h1 className="mb-4 text-2xl font-bold">Programming</h1>
           <Image
             src="/ComputerScienceResume.png"
             alt="Computer Science Resume"
@@ -13,7 +15,10 @@ export default function Resume() {
             height={1000}
           />
         </div>
-        <div className="flex justify-center items-center max-h-[80vh]">
+
+        {/* Video Production Section */}
+        <div className="flex flex-col justify-center items-center max-h-[80vh]">
+          <h1 className="mb-4 text-2xl font-bold">Video Production</h1>
           <Image
             src="/MediaResume.png"
             alt="Media Resume"
