@@ -110,7 +110,7 @@ const ContactForm = () => {
             <div className="flex flex-col items-center text-center justify-center md:ml-20">
               <div className="py-5">
                 <h1 className="text-4xl font-bold pb-5">Email</h1>
-                <a href="mailto:contact@alexandergardiner.com" className="lg:text-4xl md:text-3xl vtext-lg font-bold text-highlight max-w-sm">contact@alexandergardiner.com</a>
+                <a href="mailto:misc@alexandergardiner.com" className="lg:text-4xl md:text-3xl vtext-lg font-bold text-highlight max-w-sm">contact@alexandergardiner.com</a>
               </div>
 
               <div className="py-5">
