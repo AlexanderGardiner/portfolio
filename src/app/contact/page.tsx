@@ -40,22 +40,39 @@ const ContactForm = () => {
 
 
    const onSubmit = async (e: React.FormEvent) => {
-    e.preventDefault(); // prevent default form submission
+  e.preventDefault();
 
-    const token = await executeRecaptcha("onSubmit");
-    if (!token) return;
+  const token = await executeRecaptcha("onSubmit");
+  if (!token) {
+    // This is the key change: an alert if reCAPTCHA fails.
+    alert("reCAPTCHA verification failed. Please try again.");
+    return;
+  }
 
-    const verified = await verifyCaptchaAction(token);
-    if (verified) {
-      const response = await fetch('/api/submit', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        alert("Contact form submitted!");
-      }
+  const verified = await verifyCaptchaAction(token);
+  if (verified) {
+    const response = await fetch('/api/submit', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      alert("Contact form submitted successfully!");
+    } else {
+      // Alert for server-side errors
+      console.error("Failed to submit form:", response.status, await response.text());
+      alert("Failed to submit form. Please try again later.");
     }
-  };
+  } else {
+    // Alert if the server action fails to verify the token
+    alert("reCAPTCHA verification failed. Please try again.");
+  }
+};
+
+
   return (
         
     <div className="flex flex-col items-center justify-center mt-16">

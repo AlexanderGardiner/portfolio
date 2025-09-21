@@ -2,23 +2,27 @@ import { NextRequest, NextResponse } from "next/server";
 
 const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
-  host: "mail.alexandergardiner.com",
-  port: 465,
-  secure: true,
+  host: "smtp.zoho.com",   
+  port: 465,                            
+  secure: true,                         
+  auth: {
+    user: "misc@alexandergardiner.com", 
+    pass: process.env.SMTP_PASS,        
+  },
   tls: {
-    // do not fail on invalid certs
     rejectUnauthorized: false,
   },
-  
 });
+
 export async function POST(req: NextRequest) {
   const { email, subject, body } = await req.json();
   console.log(email);
   const info = await transporter.sendMail({
-    from: email, // sender address
-    to: "misc@alexandergardiner.com", // list of receivers
-    subject: subject, // Subject line
-    text: body, // plain text body
+    from: "misc@alexandergardiner.com",
+    replyTo: email,
+    to: "misc@alexandergardiner.com",
+    subject: "CONTACT FORM SUBMISSION: "+ subject,
+    text: body,
   });
 
   console.log("Message sent: %s", info.messageId);
