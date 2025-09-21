@@ -729,8 +729,8 @@ export default function Page() {
               </div>
             </div>
             <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
-              <li>Created a video package for the 2022 STN Challenge under the "Nat Sound" category.</li>
-              <li>Produced content for the prompt "Rhythm of the Street," highlighting a local musician performing at a nearby marketplace.</li>
+              <li>Created a video package for the 2022 STN Challenge under the &quot;Nat Sound&quot; category.</li>
+              <li>Produced content for the prompt &quot;Rhythm of the Street,&quot; highlighting a local musician performing at a nearby marketplace.</li>
               <li>Served as one of the primary videographers, capturing authentic street performances and ambient sounds.</li>
               <li>Worked as one of the primary editors, assembling footage to emphasize rhythm, mood, and storytelling.</li>
               <li>Showcased the vibrancy of an individual musician through audiovisual storytelling and natural sound design.</li>

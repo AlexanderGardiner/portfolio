@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Portfolio() {
   return (
     <div className="flex flex-col items-center justify-center mt-16">
@@ -9,20 +10,24 @@ export default function Portfolio() {
           <div className="flex flex-col items-center">
               <h3 className="text-4xl font-bold">Programming</h3>
               <a className="group flex flex-col items-center" href="portfolio/programming">
-                <img
+                <Image
                   className="shadow-2xl rounded-[150px] max-h-44 md:max-h-max w-5/5 md:w-4/5 aspect-video object-cover my-10 md:my-20 hover:scale-105"
                   src="/portfolio/ProgrammingPortfolio.png"
                   alt="Photo of Alex Gardiner"
+                  width={1000}
+                  height={100}
                 />
               </a>
             </div>
             <div className="flex flex-col items-center">
               <h3 className="text-4xl font-bold">Video Production</h3>
               <a className="group flex flex-col items-center" href="portfolio/videoProduction">
-                <img
+                <Image
                   className="shadow-2xl rounded-[150px] max-h-44 md:max-h-max w-5/5 md:w-4/5 aspect-video object-cover my-10 md:my-20 hover:scale-105"
                   src="/portfolio/VideoPortfolio.png"
                   alt="Photo of Video Camera"
+                  width={1000}
+                  height={100}
                 />
               </a>
             </div>

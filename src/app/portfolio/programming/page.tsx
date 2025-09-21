@@ -39,7 +39,7 @@ export default function Page() {
             </div>
             <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
               <li>Engineered and evaluated PyTorch models for adult vs. child speech classification, achieving 93.5% accuracy via cross-validation.</li>
-              <li>Unified six large-scale datasets, including two private datasets from UCLA’s Speech and Auditory Processing Lab, to create a comprehensive training corpus.</li>
+              <li>Unified six large-scale datasets, including two private datasets from UCLA&apos;s Speech and Auditory Processing Lab, to create a comprehensive training corpus.</li>
               <li>Implemented data augmentation using impulse response convolution to mitigate recording artifacts and improve model robustness.</li>
               <li>Extracted embeddings using HuBERT, Whisper, and ECAPA-TDNN for robust feature representation.</li>
               <li>Benchmarked and optimized neural networks, logistic regression, XGBoost, and transformer models to identify the best-performing approaches.</li>
@@ -100,7 +100,7 @@ export default function Page() {
                 2023 – Charged Up
               </summary>
               <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 mt-2">
-                <li>Founded FRC Team 9084 and established the software team to build the robot's codebase from scratch.</li>
+                <li>Founded FRC Team 9084 and established the software team to build the robot&apos;s codebase from scratch.</li>
                 <li>Developed closed-loop PID motor control and computer vision for AprilTags for basic autonomous navigation.</li>
                 <li>Implemented autonomous pathing achieving a competitive auto routine.</li>
                 <li>Built modular software infrastructure to allow future students to maintain and expand functionality.</li>
@@ -352,7 +352,7 @@ export default function Page() {
             <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
               <li>Developed a custom library for FRC Team 9084, including swerve drive code with odometry and pose estimation.</li>
               <li>Implemented utility classes for motor initialization, as well as math and gyro operations, simplifying robot code development.</li>
-              <li>Designed the library to improve maintainability, reusability, and overall performance of the team's robot software.</li>
+              <li>Designed the library to improve maintainability, reusability, and overall performance of the team&apos;s robot software.</li>
             </ul>
             <a
               href="https://github.com/Octobots9084/Octo-Lib-Dev"
@@ -466,7 +466,7 @@ export default function Page() {
               <h5 className="text-lg mr-3 text-highlight font-bold">Express</h5>
             </div>
             <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
-              <li>Developed a customizable web-based scouting system for FRC Team 9084 for the 2023 "Charged Up" competition.</li>
+              <li>Developed a customizable web-based scouting system for FRC Team 9084 for the 2023 &quot;Charged Up&quot; competition.</li>
               <li>Built a web user interface for inputting match data, which is uploaded to a server for collection.</li>
               <li>Stored data as CSV files to enable easy analysis and support team strategy decisions.</li>
             </ul>

@@ -98,7 +98,7 @@ const ContactForm = () => {
 
               <div className="py-5">
                 <h1 className="text-4xl font-bold pb-5">Phone</h1>
-                <a href="tel:+1000000000" className="lg:text-4xl md:text-3xl text-lg font-bold text-highlight">(000)-000-000</a>
+                <a href="tel:+8058862325" className="lg:text-4xl md:text-3xl text-lg font-bold text-highlight">(805)-886-2325</a>
               </div>
             </div>
 

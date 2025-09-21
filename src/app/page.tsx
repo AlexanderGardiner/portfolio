@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Home() {
   return (
     <div className="flex h-screen justify-center mt-16">
@@ -9,24 +10,23 @@ export default function Home() {
               <span className="text-4xl text-highlight font-bold">
                 Hi, I&apos;m Alex Gardiner.
               </span>
-              <br></br>
-              <br></br>
-              I&apos;m currently attending Dos Pueblos High School in Goleta.
-              This website showcases my portfolio, as well as my resume. It
-              focuses on the two primary skills I have been building,
-              programming and video production. I have been programming for over
-              8 years in various different programming languages (see my
-              Resume). I have been shooting and editing videos for around 3
-              years, and during this time I have attended various video
-              production conferences, and contests, and have received awards for
-              my work.
+              <br /><br />
+              I&apos;m a dual major at UC Davis in Computer Science & Engineering and Cinema & Digital Media. I&apos;ve been programming for 9 years and contributed to AI research, including a published IEEE paper on speech classification.  
+              <br /><br />
+              I&apos;ve been shooting and editing videos for 4 years, producing projects like a promotional video for Dos Pueblos High School and a feature on a local fire station.  
+              <br /><br />
+              I apply my technical skills in hands-on engineering and media projects, participating in UC Davis&apos;s RoboSub team and creating content for the student-led media group Aggie Studios.  
+              <br /><br />
+              This site showcases my programming and video work, highlighting both technical expertise and creative storytelling.
             </p>
           </div>
-          <div className="text-center flex items-center w-2xl max-w-2xl mx-auto lg:ml-20">
-            <img
+          <div className="text-center flex items-center w-2xl max-w-3xl mx-auto lg:ml-20">
+            <Image
               className="p-5 shadow-xl w-full rounded-full"
-              src="/AlexGardiner.png"
+              src="/AlexGardiner.jpeg"
               alt="Photo of Alex Gardiner"
+              width={3000}
+              height={1000}
             />
           </div>
         </div>
