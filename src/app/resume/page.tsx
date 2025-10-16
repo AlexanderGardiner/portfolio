@@ -21,7 +21,7 @@ export default function Resume() {
         {/* Video Production Section */}
         <div className="flex flex-col justify-center items-center max-h-[85vh]">
           <h1 className="mb-4 text-2xl font-bold">Video Production</h1>
-          <PDFViewer pdfSRC="/ComputerScienceResume.pdf" />
+          <PDFViewer pdfSRC="/MediaResume.pdf" />
           {/* <Image
             src="/MediaResume.png"
             alt="Media Resume"
