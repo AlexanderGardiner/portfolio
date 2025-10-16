@@ -4,7 +4,7 @@ import PDFViewer from "../components/pdfEmbed";
 export default function Resume() {
   return (
     <div className="flex justify-center items-start mt-16 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-[120vh]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-[120vh]">
         {/* Programming Section */}
         <div className="flex flex-col justify-center items-center max-h-[85vh]">
           <h1 className="mb-4 text-2xl font-bold">Programming</h1>
