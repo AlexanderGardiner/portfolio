@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
-import { verifyCaptchaAction } from "@/app/_actions/Captcha"
+import { verifyCaptchaAction } from "@/app/_actions/Captcha";
 declare const grecaptcha: any;
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    subject: '',
-    body: '',
+    email: "",
+    subject: "",
+    body: "",
   });
   const [grecaptchaReady, setGrecaptchaReady] = useState(false);
-  const SITE_KEY = "6Le_JhkpAAAAAMOKCA19sZ4VbxTGbfV475c-Tj73";
+  const SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -38,95 +38,158 @@ const ContactForm = () => {
     }
   };
 
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-   const onSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-
-  const token = await executeRecaptcha("onSubmit");
-  if (!token) {
-    // This is the key change: an alert if reCAPTCHA fails.
-    alert("reCAPTCHA verification failed. Please try again.");
-    return;
-  }
-
-  const verified = await verifyCaptchaAction(token);
-  if (verified) {
-    const response = await fetch('/api/submit', {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    if (response.ok) {
-      alert("Contact form submitted successfully!");
-    } else {
-      // Alert for server-side errors
-      console.error("Failed to submit form:", response.status, await response.text());
-      alert("Failed to submit form. Please try again later.");
+    const token = await executeRecaptcha("onSubmit");
+    if (!token) {
+      // This is the key change: an alert if reCAPTCHA fails.
+      alert("reCAPTCHA verification failed. Please try again.");
+      return;
     }
-  } else {
-    // Alert if the server action fails to verify the token
-    alert("reCAPTCHA verification failed. Please try again.");
-  }
-};
 
+    const verified = await verifyCaptchaAction(token);
+    if (verified) {
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Contact form submitted successfully!");
+      } else {
+        // Alert for server-side errors
+        console.error(
+          "Failed to submit form:",
+          response.status,
+          await response.text()
+        );
+        alert("Failed to submit form. Please try again later.");
+      }
+    } else {
+      // Alert if the server action fails to verify the token
+      alert("reCAPTCHA verification failed. Please try again.");
+    }
+  };
 
   return (
-        
     <div className="flex flex-col items-center justify-center mt-16">
       <div className="w-4/5 flex flex-col items-center justify-center mx-auto">
         <div className="w-full md:w-full text-center items-center flex flex-col justify-center ">
           <div className="w-4/5 mx-auto">
-          <div className="flex items-center text-center ">
-            <h1 className="mb-4 md:text-6xl text-5xl font-bold text-center text-gray-900 dark:text-white mx-auto">Contact me</h1>
-          </div>
-          
-          <div className="flex grid md:grid-cols-2 gap-4">
-            <div className="flex items-center md:mx-10 justify-center mx-auto md:mr-20">
-              <section className="">
-                <div className="py-8 md:py-16 md:px-4 mx-auto items-center max-w-md md:w-xl md:max-w-xl">
-                    <h2 className="mb-4 lg:text-4xl md:text-5xl text-center text-4xl font-bold text-center text-gray-900 dark:text-white pb-5 md:w-96">Get In Touch</h2>
+            <div className="flex items-center text-center ">
+              <h1 className="mb-4 md:text-6xl text-5xl font-bold text-center text-gray-900 dark:text-white mx-auto">
+                Contact me
+              </h1>
+            </div>
+
+            <div className="flex grid md:grid-cols-2 gap-4">
+              <div className="flex items-center md:mx-10 justify-center mx-auto md:mr-20">
+                <section className="">
+                  <div className="py-8 md:py-16 md:px-4 mx-auto items-center max-w-md md:w-xl md:max-w-xl">
+                    <h2 className="mb-4 lg:text-4xl md:text-5xl text-center text-4xl font-bold text-center text-gray-900 dark:text-white pb-5 md:w-96">
+                      Get In Touch
+                    </h2>
                     <form onSubmit={onSubmit} className="space-y-8">
-                        <div>
-                            <label htmlFor="email" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">Your email</label>
-                            <input type="email" id="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} value={formData.email} className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light max-w-md mx-auto" placeholder="example@example.com" required/>
-                        </div>
-                        <div>
-                            <label htmlFor="subject" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300">Subject</label>
-                            <input type="text" id="subject" onChange={(e) => setFormData({ ...formData, subject: e.target.value })} value={formData.subject} className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light max-w-md mx-auto" placeholder="Subject of your message" required/>
-                        </div>
-                        <div className="sm:col-span-2">
-                            <label htmlFor="message" className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400">Your message</label>
-                            <textarea id="message" onChange={(e) => setFormData({ ...formData, body: e.target.value })} value={formData.body} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 max-w-md mx-auto" placeholder="Put your message here"></textarea>
-                        </div>
-                        <button type="submit" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700">Send message</button>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300"
+                        >
+                          Your email
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          onChange={(e) =>
+                            setFormData({ ...formData, email: e.target.value })
+                          }
+                          value={formData.email}
+                          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light max-w-md mx-auto"
+                          placeholder="example@example.com"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="subject"
+                          className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-300"
+                        >
+                          Subject
+                        </label>
+                        <input
+                          type="text"
+                          id="subject"
+                          onChange={(e) =>
+                            setFormData({
+                              ...formData,
+                              subject: e.target.value,
+                            })
+                          }
+                          value={formData.subject}
+                          className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light max-w-md mx-auto"
+                          placeholder="Subject of your message"
+                          required
+                        />
+                      </div>
+                      <div className="sm:col-span-2">
+                        <label
+                          htmlFor="message"
+                          className="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400"
+                        >
+                          Your message
+                        </label>
+                        <textarea
+                          id="message"
+                          onChange={(e) =>
+                            setFormData({ ...formData, body: e.target.value })
+                          }
+                          value={formData.body}
+                          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 max-w-md mx-auto"
+                          placeholder="Put your message here"
+                        ></textarea>
+                      </div>
+                      <button
+                        type="submit"
+                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
+                      >
+                        Send message
+                      </button>
                     </form>
+                  </div>
+                </section>
+              </div>
+
+              <div className="flex flex-col items-center text-center justify-center md:ml-20">
+                <div className="py-5">
+                  <h1 className="text-4xl font-bold pb-5">Email</h1>
+                  <a
+                    href="mailto:misc@alexandergardiner.com"
+                    className="lg:text-4xl md:text-3xl vtext-lg font-bold text-highlight max-w-sm"
+                  >
+                    misc@alexandergardiner.com
+                  </a>
                 </div>
-              </section>
-            </div>
-          
-            <div className="flex flex-col items-center text-center justify-center md:ml-20">
-              <div className="py-5">
-                <h1 className="text-4xl font-bold pb-5">Email</h1>
-                <a href="mailto:misc@alexandergardiner.com" className="lg:text-4xl md:text-3xl vtext-lg font-bold text-highlight max-w-sm">misc@alexandergardiner.com</a>
-              </div>
 
-              <div className="py-5">
-                <h1 className="text-4xl font-bold pb-5">Phone</h1>
-                <a href="tel:+8058862325" className="lg:text-4xl md:text-3xl text-lg font-bold text-highlight">(805)-886-2325</a>
+                <div className="py-5">
+                  <h1 className="text-4xl font-bold pb-5">Phone</h1>
+                  <a
+                    href="tel:+8058862325"
+                    className="lg:text-4xl md:text-3xl text-lg font-bold text-highlight"
+                  >
+                    (805)-886-2325
+                  </a>
+                </div>
               </div>
             </div>
-
           </div>
-          </div>
-
-          
         </div>
       </div>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default ContactForm
+export default ContactForm;
