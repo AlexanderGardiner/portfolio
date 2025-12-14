@@ -305,7 +305,7 @@ export default function Page() {
               </li>
             </ul>
             <a
-              href="https://alexandergardiner.com/recipescout"
+              href="https://recipescout.alexandergardiner.com"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
               Link to Demo
