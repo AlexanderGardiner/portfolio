@@ -12,10 +12,10 @@ export default function Home() {
               </span>
               <br />
               <br />
-              I&apos;m a dual major at UC Davis in Computer Science &
-              Engineering and Cinema & Digital Media. I&apos;ve been programming
-              for 9 years and contributed to AI research, including a published
-              IEEE paper on speech classification.
+              I&apos;m a student at UC Davis majoring in Computer Science &
+              Engineering. I&apos;ve been programming for 9 years and
+              contributed to AI research, including a published IEEE paper on
+              speech classification.
               <br />
               <br />
               I&apos;ve been shooting and editing videos for 4 years, producing
