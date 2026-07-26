@@ -11,9 +11,9 @@ export default function Portfolio() {
               <h3 className="text-4xl font-bold">Programming</h3>
               <a className="group flex flex-col items-center" href="portfolio/programming">
                 <Image
-                  className="shadow-2xl rounded-[150px] max-h-44 md:max-h-max w-5/5 md:w-4/5 aspect-video object-cover my-10 md:my-20 hover:scale-105"
-                  src="/portfolio/ProgrammingPortfolio.png"
-                  alt="Photo of Alex Gardiner"
+                  className="shadow-2xl border-4 border-white rounded-[150px] max-h-44 md:max-h-max w-5/5 md:w-4/5 aspect-video object-cover my-10 md:my-20 hover:scale-105"
+                  src="/portfolio/ProgrammingPortfolio.jpeg"
+                  alt="Octobots Team 9084 competition robot"
                   width={1000}
                   height={100}
                 />
@@ -23,7 +23,7 @@ export default function Portfolio() {
               <h3 className="text-4xl font-bold">Video Production</h3>
               <a className="group flex flex-col items-center" href="portfolio/videoProduction">
                 <Image
-                  className="shadow-2xl rounded-[150px] max-h-44 md:max-h-max w-5/5 md:w-4/5 aspect-video object-cover my-10 md:my-20 hover:scale-105"
+                  className="shadow-2xl border-4 border-white rounded-[150px] max-h-44 md:max-h-max w-5/5 md:w-4/5 aspect-video object-cover my-10 md:my-20 hover:scale-105"
                   src="/portfolio/VideoPortfolio.png"
                   alt="Photo of Video Camera"
                   width={1000}

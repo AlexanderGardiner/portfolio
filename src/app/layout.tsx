@@ -3,8 +3,9 @@ import Navbar from './components/navbar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Alex Gardiner',
-  description: 'My Portfolio',
+  title: 'Alex Gardiner | Computer Science Portfolio',
+  description:
+    'The computer science and video production portfolio of Alex Gardiner, featuring software engineering, AI/ML, robotics, and media projects.',
 }
 
 export default function RootLayout({

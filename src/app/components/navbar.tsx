@@ -19,7 +19,7 @@ const Navbar = () => {
         <div>
         <nav className="fixed top-0 w-screen rounded-xl bg-highlight border-gray-200 dark:bg-highlight drop-shadow-2xl z-10">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://alexandergardiner.com/" className="flex items-center">
+                <a href="/" className="flex items-center">
                     <Image src="/logo.svg" className="h-10 mr-5" alt="Logo" height={40} width={40}/>
                     <span className="self-center text-3xl text-white font-semibold whitespace-nowrap dark:text-white mr-3">Alex Gardiner</span>
                 </a>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <a href="/" className={"/" === pathname ? selectedStyle : unselectedStyle}>Home</a>
                     </li>
                     <li>
-                        <a href="/portfolio" className={"/portfolio" === pathname ? selectedStyle : unselectedStyle}>Portfolio</a>
+                        <a href="/portfolio" className={pathname === "/portfolio" || pathname.startsWith("/portfolio/") ? selectedStyle : unselectedStyle}>Portfolio</a>
                     </li>
                     <li>
                         <a href="/resume" className={"/resume" === pathname ? selectedStyle : unselectedStyle}>Resume</a>

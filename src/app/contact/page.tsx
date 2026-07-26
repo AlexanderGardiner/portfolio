@@ -167,10 +167,10 @@ const ContactForm = () => {
                 <div className="py-5">
                   <h1 className="text-4xl font-bold pb-5">Email</h1>
                   <a
-                    href="mailto:misc@alexandergardiner.com"
+                    href="mailto:alex@alexandergardiner.com"
                     className="lg:text-4xl md:text-3xl vtext-lg font-bold text-highlight max-w-sm"
                   >
-                    misc@alexandergardiner.com
+                    alex@alexandergardiner.com
                   </a>
                 </div>
 
@@ -180,7 +180,27 @@ const ContactForm = () => {
                     href="tel:+8058862325"
                     className="lg:text-4xl md:text-3xl text-lg font-bold text-highlight"
                   >
-                    (805)-886-2325
+                    (805) 886-2325
+                  </a>
+                </div>
+
+                <div className="py-5">
+                  <h1 className="text-4xl font-bold pb-5">GitHub</h1>
+                  <a
+                    href="https://github.com/alexandergardiner"
+                    className="lg:text-3xl md:text-2xl text-lg font-bold text-highlight"
+                  >
+                    github.com/alexandergardiner
+                  </a>
+                </div>
+
+                <div className="py-5">
+                  <h1 className="text-4xl font-bold pb-5">LinkedIn</h1>
+                  <a
+                    href="https://linkedin.com/in/argardiner"
+                    className="lg:text-3xl md:text-2xl text-lg font-bold text-highlight"
+                  >
+                    linkedin.com/in/argardiner
                   </a>
                 </div>
               </div>

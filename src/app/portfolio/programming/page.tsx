@@ -23,6 +23,105 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Pest Spread Prediction and Notification App - Anticipate
+            </h3>
+            <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              HackDavis, May 2026
+            </time>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 my-4">
+              <h5 className="text-lg text-highlight font-bold">React Native</h5>
+              <h5 className="text-lg text-highlight font-bold">Supabase</h5>
+              <h5 className="text-lg text-highlight font-bold">FastAPI</h5>
+              <h5 className="text-lg text-highlight font-bold">Vercel</h5>
+              <h5 className="text-lg text-highlight font-bold">Expo</h5>
+              <h5 className="text-lg text-highlight font-bold">Gemini AI</h5>
+            </div>
+            <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
+              <li>
+                Developed a mobile application that helps farmers identify and
+                track pest risks across 6,731 agricultural fields in Yolo
+                County.
+              </li>
+              <li>
+                Integrated Gemini Vision AI and UC IPM vector search to identify
+                possible pests from uploaded images and generate relevant
+                reports.
+              </li>
+              <li>
+                Implemented breadth-first search pest propagation and PostGIS
+                scoring to estimate how pests could spread between nearby
+                fields.
+              </li>
+              <li>
+                Added proactive alerts across 63 irrigation districts using
+                Expo push notifications.
+              </li>
+              <li>
+                Supported offline uploads with automatic retries for users in
+                areas with unreliable connectivity.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/sathvikparasa/hackdavis26"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
+            >
+              Link to GitHub
+            </a>
+            <ProgrammingProject
+              imageWidth={800}
+              imageURL={"/portfolio/programmingProjects/Anticipate-2026.jpg"}
+              imageAltText={"Anticipate mobile app interface"}
+            />
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              Cloud-Native Media Review Platform - Reel Feedback
+            </h3>
+            <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              October 2025 - Present
+            </time>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 my-4">
+              <h5 className="text-lg text-highlight font-bold">Cloudflare</h5>
+              <h5 className="text-lg text-highlight font-bold">AWS Lambda</h5>
+              <h5 className="text-lg text-highlight font-bold">Next.js</h5>
+              <h5 className="text-lg text-highlight font-bold">
+                HLS Transcoding
+              </h5>
+            </div>
+            <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
+              <li>
+                Developed a collaborative media review platform for uploading,
+                watching, and providing feedback on video projects.
+              </li>
+              <li>
+                Built the application with Next.js, Cloudflare Workers, and
+                Cloudflare D1, with Google OAuth for secured access.
+              </li>
+              <li>
+                Created an AWS Lambda and FFmpeg processing pipeline that
+                converts uploaded videos into HLS streams.
+              </li>
+              <li>
+                Generated four to seven adaptive bitrate versions between 1080p
+                and 360p so playback quality can adjust to the viewer&apos;s
+                connection.
+              </li>
+              <li>
+                Reduced the time between uploading and playable video
+                availability to approximately 7-20 seconds for short-form
+                content.
+              </li>
+            </ul>
+            <ProgrammingProject
+              imageWidth={1000}
+              imageURL={"/portfolio/programmingProjects/ReelFeedback.png"}
+              imageAltText={"Reel Feedback project dashboard"}
+            />
+          </li>
+          <li className="mb-10 ml-6">
+            <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
               IEEE ITAIC Published Research Paper
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -44,18 +143,17 @@ export default function Page() {
             </div>
             <ul className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 list-disc list-inside">
               <li>
-                Engineered and evaluated PyTorch models for adult vs. child
-                speech classification, achieving 93.5% accuracy via
-                cross-validation.
+                Achieved 93.5% accuracy and 93.81% F1 on child vs. adult speech
+                classification across two held-out cross-corpus test sets.
               </li>
               <li>
-                Unified six large-scale datasets, including two private datasets
-                from UCLA&apos;s Speech and Auditory Processing Lab, to create a
-                comprehensive training corpus.
+                Increased training data 4x to 31,936 utterances by unifying six
+                datasets, including two private datasets from UCLA&apos;s Speech and
+                Auditory Processing Lab.
               </li>
               <li>
-                Implemented data augmentation using impulse response convolution
-                to mitigate recording artifacts and improve model robustness.
+                Implemented impulse response convolution augmentation to
+                normalize recording artifacts and improve model robustness.
               </li>
               <li>
                 Extracted embeddings using HuBERT, Whisper, and ECAPA-TDNN for
@@ -78,7 +176,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/Robust-Child-Speech-Classification-Leveraging-Augmentation-and-Speaker-Embeddings"
               className="ml-4 inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
           </li>
           <li className="mb-10 ml-6">
@@ -106,7 +204,7 @@ export default function Page() {
                   and collection, optimizing driver efficiency during matches.
                 </li>
                 <li>
-                  Achieved top 1% autonomous performance worldwide and recieved
+                  Achieved top 1% autonomous performance worldwide and received
                   the Rising All Star Award.
                 </li>
               </ul>
@@ -114,7 +212,7 @@ export default function Page() {
                 href="https://github.com/Octobots9084/DAAAVE-2025"
                 className="inline-flex items-center px-4 py-2 mt-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight"
               >
-                Link to Github
+                Link to GitHub
               </a>
               <YoutubePlayer src="https://www.youtube.com/embed/H-n8UWospvo?si=0qM3CjnierAnY9bD" />
             </details>
@@ -127,8 +225,8 @@ export default function Page() {
               <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 mt-2">
                 <li>
                   Expanded autonomous capabilities with improved trajectory
-                  calculations and enhanced PID motor control for smoother
-                  movement.
+                  adherence, tuned PID motor control, and YOLO object detection
+                  for smoother and more reliable operation.
                 </li>
                 <li>
                   Upgraded AprilTag vision system to allow more precise
@@ -140,15 +238,16 @@ export default function Page() {
                   effectively.
                 </li>
                 <li>
-                  Achieved top 10 ranking in California competitions,
-                  demonstrating the software and hardware improvements.
+                  Elevated the team ranking from 43rd to 10th out of 300 in
+                  California within one year through software and hardware
+                  improvements.
                 </li>
               </ul>
               <a
                 href="https://github.com/Octobots9084/Octave-2024"
                 className="inline-flex items-center px-4 py-2 mt-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight"
               >
-                Link to Github
+                Link to GitHub
               </a>
               <YoutubePlayer src="https://www.youtube.com/embed/6uoF0Oa8oQY?si=bdPa5cSWNCSAIsBv" />
             </details>
@@ -160,8 +259,8 @@ export default function Page() {
               </summary>
               <ul className="list-disc list-inside text-gray-500 dark:text-gray-400 mt-2">
                 <li>
-                  Founded FRC Team 9084 and established the software team to
-                  build the robot&apos;s codebase from scratch.
+                  Founded FRC Team 9084 and led a software team of 15 engineers
+                  to build the robot&apos;s codebase from scratch.
                 </li>
                 <li>
                   Developed closed-loop PID motor control and computer vision
@@ -184,7 +283,7 @@ export default function Page() {
                 href="https://github.com/Octobots9084/Aluminati-2023"
                 className="inline-flex items-center px-4 py-2 mt-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight"
               >
-                Link to Github
+                Link to GitHub
               </a>
               <YoutubePlayer src="https://www.youtube.com/embed/OwLbJpfCA3s?si=yBU1Pc3UzVIzWgdu" />
             </details>
@@ -308,7 +407,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/recipescout"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={1000}
@@ -319,7 +418,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              octoscout
+              OctoScout
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2024-2025
@@ -381,7 +480,7 @@ export default function Page() {
               href="https://github.com/Octobots9084/octoscoutinfinite"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={1000}
@@ -393,7 +492,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              webcut
+              Webcut
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -423,7 +522,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/webcut"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={1000}
@@ -434,7 +533,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              slimemouldsim
+              Slime Mould Simulation
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -494,7 +593,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/Slime-Mould"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
 
             <ProgrammingProject
@@ -539,7 +638,7 @@ export default function Page() {
               href="https://github.com/Octobots9084/Octo-Lib-Dev"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
 
             <YoutubePlayer
@@ -552,7 +651,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              issuetracker
+              Issue Tracker
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -608,7 +707,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/IssueTracker"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={1000}
@@ -620,7 +719,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              octoscout2023
+              OctoScout 2023
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023
@@ -674,7 +773,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/octo-scout"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={250}
@@ -685,7 +784,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              electromagneticparticlesim
+              Electromagnetic Particle Simulation
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2022
@@ -731,7 +830,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/electromagneticparticlesim"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={1000}
@@ -745,7 +844,7 @@ export default function Page() {
           <li className="mb-10 ml-6">
             <div className="absolute w-4 h-4 rounded-full mt-1.5 -start-2 border border-white dark:border-gray-900 bg-highlight"></div>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              platformerv2
+              Platformer V2
             </h3>
             <time className="block mb-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2022
@@ -791,7 +890,7 @@ export default function Page() {
               href="https://github.com/AlexanderGardiner/Platformerv2"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-200 rounded-lg bg-highlight hover:bg-white hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white dark:bg-highlight dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-darkHighlight dark:focus:ring-gray-700"
             >
-              Link to Github
+              Link to GitHub
             </a>
             <ProgrammingProject
               imageWidth={1000}

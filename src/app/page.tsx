@@ -12,20 +12,21 @@ export default function Home() {
               </span>
               <br />
               <br />
-              I&apos;m a student at UC Davis majoring in Computer Science &
-              Engineering. I&apos;ve been programming for 9 years and
+              I&apos;m a student at UC Davis majoring in Computer Science. I&apos;ve
+              been programming for 10 years and
               contributed to AI research, including a published IEEE paper on
               speech classification.
               <br />
               <br />
-              I&apos;ve been shooting and editing videos for 4 years, producing
+              I&apos;ve been shooting and editing videos for 5 years, producing
               projects like a promotional video for Dos Pueblos High School and
               a feature on a local fire station.
               <br />
               <br />
-              I apply my technical skills in hands-on organizations,
-              participating in CodeLab at UC Davis as well as continuing to
-              build my skills through side projects.
+              I apply my technical skills through work at a marketing startup called
+              Clove Agency as well as leading CodeLab at UC Davis as
+              Vice President of Infrastructure while continuing to build my
+              skills through side projects.
               <br />
               <br />
               This site showcases my programming and video work, highlighting
@@ -34,7 +35,7 @@ export default function Home() {
           </div>
           <div className="text-center flex items-center w-2xl max-w-3xl mx-auto lg:ml-20">
             <Image
-              className="p-5 shadow-xl w-full rounded-full"
+              className="shadow-xl border-4 border-white w-full rounded-full"
               src="/AlexGardiner.jpeg"
               alt="Photo of Alex Gardiner"
               width={3000}
