@@ -3,7 +3,12 @@
 import { useState, useEffect } from "react";
 
 import { verifyCaptchaAction } from "@/app/_actions/Captcha";
-declare const grecaptcha: any;
+declare const grecaptcha: {
+  execute: (
+    siteKey: string | undefined,
+    options: { action: string }
+  ) => Promise<string>;
+};
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +26,7 @@ const ContactForm = () => {
     script.defer = true;
     script.onload = () => setGrecaptchaReady(true);
     document.body.appendChild(script);
-  }, []);
+  }, [SITE_KEY]);
 
   // Function to execute reCAPTCHA
   const executeRecaptcha = async (action: string): Promise<string | null> => {

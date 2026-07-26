@@ -1,4 +1,4 @@
-import { FaCamera, FaCut, FaVolumeUp, FaUser } from "react-icons/fa";
+import { FaCamera, FaCut, FaVolumeUp } from "react-icons/fa";
 
 export default function Page() {
   return (

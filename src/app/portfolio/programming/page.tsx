@@ -1,7 +1,6 @@
 "use client";
 import ProgrammingProject from "@/app/components/programmingProject";
 import YoutubePlayer from "@/app/components/youtubePlayer";
-import { useState } from "react";
 import {
   FaHtml5,
   FaCss3Alt,

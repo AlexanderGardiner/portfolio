@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PDFViewer from "../components/pdfEmbed";
 
 export default function Resume() {
